@@ -1,6 +1,8 @@
 package com.e.indwork;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.text.InputFilter;
 import android.widget.ArrayAdapter;
@@ -13,27 +15,51 @@ import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Locale;
+
 
 public class MainActivity extends AppCompatActivity  {
 String[] levels;
+String[] checks;
 double[] o=new double[10];
 double[] oh=new double[10];
 double[] oe=new double[7];
 double[] u=new double[10];
 double[] uh=new double[10];
 double[] ue=new double[7];
-TableLayout tabless;
+double[] w=new double[10];
+double[] wh=new double[10];
+double[] we=new double[7];
+Spinner check;
 TextView textView;
-TableRow rowss;
+double rs;
+double rh;
+double re;
+double [] usr;
+double[] uhr;
+double[] uer;
+double[]sed=new double[3];
+
+
+    @SuppressLint({"CutPasteId", "DefaultLocale"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button beginCalculation= findViewById(R.id.button);
+        Button step23=findViewById(R.id.button3);
+        Button step45=findViewById(R.id.button4);
         ScrollView scrollView=findViewById(R.id.scroll);
-        tabless= findViewById(R.id.SS);
+        EditText ks=findViewById(R.id.uss);
+        EditText kh=findViewById(R.id.ush);
+        EditText ke=findViewById(R.id.use);
+        usr=new double[3];
+        uhr=new double[3];
+        uer=new double[3];
         scrollView.setFocusable(false);
         levels = new String[]{ "низький рівень", "рівень нижче середнього", "середній рівень", "рівень вище середнього", "високий рівень" };
+        checks = new String[]{ "песимістичний сценарій розгортання подій", "обережний сценарій розгортання подій", "середній сценарій розгортання подій", "оптимістичний сценарій розгортання подій" };
+        check =  findViewById(R.id.check);
         Spinner spin1 =  findViewById(R.id.ss);
         Spinner spin2 =  findViewById(R.id.ss1);
         Spinner spin3 =  findViewById(R.id.ss2);
@@ -94,35 +120,51 @@ TableRow rowss;
         EditText a4 =findViewById(R.id.editText14);
         EditText a5 =findViewById(R.id.editText15);
         EditText a6 =findViewById(R.id.editText16);
-        ss1.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "1")});
-        ss2.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "1")});
-        ss3.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "1")});
-        ss4.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "1")});
-        ss5.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "1")});
-        ss6.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "1")});
-        ss7.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "1")});
-        ss8.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "1")});
-        ss9.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "1")});
-        ss10.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "1")});
-        sh1.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "1")});
-        sh2.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "1")});
-        sh3.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "1")});
-        sh4.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "1")});
-        sh5.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "1")});
-        sh6.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "1")});
-        sh7.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "1")});
-        sh8.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "1")});
-        sh9.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "1")});
-        sh10.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "1")});
-        se1.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "1")});
-        se2.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "1")});
-        se3.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "1")});
-        se4.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "1")});
-        se5.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "1")});
-        se6.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "1")});
-        se7.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "1")});
+        ks.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "10")});
+        kh.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "10")});
+        ke.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "10")});
+        EditText editText= findViewById(R.id.v1);
+        int vmain=editText.getId();
+        for (int i=vmain;i<vmain+10;i++) {
+            editText = findViewById(i);
+            editText.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "10")});
+        }
+        editText= findViewById(R.id.vh1);
+        vmain=editText.getId();
+        for (int i=vmain;i<vmain+10;i++) {
+            editText = findViewById(i);
+            editText.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "10")});
+        }
+        editText= findViewById(R.id.ve1);
+        vmain=editText.getId();
+        for (int i=vmain;i<vmain+7;i++) {
+            editText = findViewById(i);
+            editText.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "10")});
+        }
+        editText= findViewById(R.id.editText1);
+        vmain=editText.getId();
+        for (int i=vmain;i<vmain+10;i++) {
+            editText = findViewById(i);
+            editText.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "1")});
+        }
+        editText= findViewById(R.id.editTexth1);
+        vmain=editText.getId();
+        for (int i=vmain;i<vmain+10;i++) {
+            editText = findViewById(i);
+            editText.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "1")});
+        }
+        editText= findViewById(R.id.editTexthe1);
+        vmain=editText.getId();
+        for (int i=vmain;i<vmain+7;i++) {
+            editText = findViewById(i);
+            editText.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "1")});
+        }
+
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, levels);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter<String> chadapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, checks);
+        chadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        check.setAdapter(chadapter);
         spin1.setAdapter(adapter);
         spin2.setAdapter(adapter);
         spin3.setAdapter(adapter);
@@ -174,15 +216,139 @@ TableRow rowss;
                         spin7.getSelectedItem().toString()};
                 stepOne(ss,sh,se,a,lvlss,lvlsh,lvlse);
             }
-            catch (Exception e){
+            catch (NullPointerException e){
                 Toast.makeText(this,"Введіть всі значення таблиці",Toast.LENGTH_LONG).show();
+                e.printStackTrace();
+            }
+            catch (Exception e){
+                Toast.makeText(this,"Сталася помилка",Toast.LENGTH_LONG).show();
                 e.printStackTrace();
             }
 
         });
+        step23.setOnClickListener(view ->{
+            try {
+                EditText edy= findViewById(R.id.v1);
+                int vs=edy.getId();
+                int vvs = 0;
+                int [] vsmain = new int[10];
+                for (int i=vs;i<vs+10;i++) {
+                    if (i-vs==0){
+                        edy=findViewById(i);
+                        vsmain[i-vs]=Integer.valueOf(edy.getText().toString());
+                        vvs=vsmain[i-vs];
+                        continue;
+                    }
+                    if (i-vs==1){
+                        edy=findViewById(i);
+                        vsmain[9]=Integer.valueOf(edy.getText().toString());
+                        vvs=vvs+vsmain[9];
+                        i++;
+                    }
+                    edy=findViewById(i);
+                    vsmain[i-vs-1]=Integer.valueOf(edy.getText().toString());
+                    vvs=vvs+vsmain[i-vs-1];
+                }
+                edy= findViewById(R.id.vh1);
+                vs=edy.getId();
+                int vvh = 0;
+                int [] vhmain = new int[10];
+                for (int i=vs;i<vs+10;i++) {
+                    if (i-vs==0){
+                        edy=findViewById(i);
+                        vhmain[i-vs]=Integer.valueOf(edy.getText().toString());
+                        vvh=vhmain[i-vs];
+                        continue;
+                    }
+                    if (i-vs==1){
+                        edy=findViewById(i);
+                        vhmain[9]=Integer.valueOf(edy.getText().toString());
+                        vvh=vvh+vhmain[9];
+                        i++;
+                    }
+                    edy=findViewById(i);
+                    vhmain[i-vs-1]=Integer.valueOf(edy.getText().toString());
+                    vvh=vvh+vhmain[i-vs-1];
+                }
+                edy= findViewById(R.id.ve1);
+                vs=edy.getId();
+                int vve = 0;
+                int [] vemain = new int[7];
+                for (int i=vs;i<vs+7;i++) {
+                    edy=findViewById(i);
+                    vemain[i-vs]=Integer.valueOf(edy.getText().toString());
+                    vve=vve+vemain[i-vs];
+                }
+                stepTwoThree(vsmain,vvs,o,u,vhmain,vvh,oh,uh,vemain,vve,oe,ue);
+
+            }
+            catch (NullPointerException e){
+            Toast.makeText(this,"Введіть всі значення таблиці, або завершіть попередній крок",Toast.LENGTH_LONG).show();
+            e.printStackTrace();
+            }
+            catch (Exception e){
+                    Toast.makeText(this,"Сталася помилка",Toast.LENGTH_LONG).show();
+                    e.printStackTrace();
+            }
+        });
+        step45.setOnClickListener(view ->{
+            try {
+                textView=findViewById(R.id.ssu);
+                textView.setText(String.format("%.3f",stepFour(rs,(double) 5/3)));
+                textView=findViewById(R.id.shu);
+                textView.setText(String.format("%.3f",stepFour(rh,(double) 5/3)));
+                textView=findViewById(R.id.seu);
+                textView.setText(String.format("%.3f",stepFour(re,(double) 5/3)));
+                textView=findViewById(R.id.esu);
+                textView.setText(String.format("%.3f",stepFour(rs,(double) 4/3)));
+                textView=findViewById(R.id.ehu);
+                textView.setText(String.format("%.3f",stepFour(rh,(double) 4/3)));
+                textView=findViewById(R.id.eeu);
+                textView.setText(String.format("%.3f",stepFour(re,(double) 4/3)));
+                textView=findViewById(R.id.dsu);
+                textView.setText(String.format("%.3f",stepFour(rs,(double) 2/3)));
+                textView=findViewById(R.id.dhu);
+                textView.setText(String.format("%.3f",stepFour(rh,(double) 2/3)));
+                textView=findViewById(R.id.deu);
+                textView.setText(String.format("%.3f",stepFour(re,(double) 2/3)));
+                for (int i=0;i<3;i++){
+                    usr[i]=stepFour(rs,(double)5/3);
+                }
+                for (int i=0;i<3;i++){
+                    uhr[i]=stepFour(rh,(double)4/3);
+                }
+                for (int i=0;i<3;i++){
+                    uer[i]=stepFour(re,(double)2/3);
+                }
+                double koefs = Double.valueOf(ks.getText().toString()) / (Double.valueOf(ks.getText().toString()) + Double.valueOf(kh.getText().toString()) + Double.valueOf(ke.getText().toString()));
+                double koefh = Double.valueOf(ks.getText().toString()) / (Double.valueOf(ks.getText().toString()) + Double.valueOf(kh.getText().toString()) + Double.valueOf(ke.getText().toString()));
+                double koefe = Double.valueOf(ks.getText().toString()) / (Double.valueOf(ks.getText().toString()) + Double.valueOf(kh.getText().toString()) + Double.valueOf(ke.getText().toString()));
+                double [] koefss=new double[]{Double.valueOf(String.format(Locale.ROOT,"%.2f",koefs)),Double.valueOf(String.format(Locale.ROOT,"%.2f",koefh)),Double.valueOf(String.format(Locale.ROOT,"%.2f",koefe))};
+                sed=new double[]{0,0,0};
+                for (int i=0;i<3;i++){
+                    double [] temp = new double[3];
+                    if(i==0){ temp=usr;}
+                    if(i==1){ temp=uhr;}
+                    if(i==2){ temp=uer;}
+                    for (int j=0;j<3;j++)
+                     {
+                        sed[i]=sed[i]+(koefss[j]*temp[j]);
+                     }
+                }
+            }
+            catch (NullPointerException e){
+                Toast.makeText(this,"Введіть всі значення таблиці, або завершіть попередній крок",Toast.LENGTH_LONG).show();
+                e.printStackTrace();
+            }
+            catch (Exception e){
+                Toast.makeText(this,"Сталася помилка",Toast.LENGTH_LONG).show();
+                e.printStackTrace();
+            }
+        });
 
     }
-    private void stepOne(double[]ss,double [] sh,double se[],double[]a,String[] lvlss,String[]lvlsh,String[]lvlse){
+    @SuppressLint("DefaultLocale")
+    private void stepOne(double[]ss, double [] sh, double se[], double[]a, String[] lvlss, String[]lvlsh, String[]lvlse){
         for (int i=0;i<=9;i++){
             if(lvlss[i].equals(levels[0])){
                 o[i]=a[1]*ss[i];
@@ -542,6 +708,204 @@ TableRow rowss;
             textView.setText(String.format("%.4f",ue[i - textue]));
 
         }
+    }
+    @SuppressLint("DefaultLocale")
+    private void stepTwoThree(int[]vs, int vvs, double[]os, double[]us, int[]vh, int vvh, double[]oh, double[]uh, int[]ve, int vve, double[]oe, double[]ue){
+        textView=findViewById(R.id.w1);
+        int text = textView.getId();
+        for (int i=text;i<text+10;i++) {
+            if (i-text==0){
+                textView = findViewById(i);
+                w[i-text]=(double)vs[i-text]/vvs;
+                textView.setText(String.format("%.3f",w[i-text]));
+                continue;
+            }
+            if (i-text==1){
+                textView = findViewById(i);
+                w[9]=(double)vs[9] / vvs;
+                textView.setText(String.format("%.3f",w[9]));
+                i++;
+            }
+            textView = findViewById(i);
+            w[i-text-1]=(double)vs[i-text-1] / vvs;
+            textView.setText(String.format("%.3f",w[i-text-1]));
+
+        }
+        textView=findViewById(R.id.wh1);
+        text = textView.getId();
+        for (int i=text;i<text+10;i++) {
+            if (i-text==0){
+                textView = findViewById(i);
+                wh[i-text]=(double)vh[i-text]/vvh;
+                textView.setText(String.format("%.3f",wh[i-text]));
+                continue;
+            }
+            if (i-text==1){
+                textView = findViewById(i);
+                wh[9]=(double)vh[9] / vvh;
+                textView.setText(String.format("%.3f",wh[9]));
+                i++;
+            }
+            textView = findViewById(i);
+            wh[i-text-1]=(double)vh[i-text-1] / vvh;
+            textView.setText(String.format("%.3f",wh[i-text-1]));
+
+        }
+        textView=findViewById(R.id.we1);
+        text = textView.getId();
+        for (int i=text;i<text+7;i++) {
+            textView = findViewById(i);
+            we[i-text]=(double)ve[i-text] / vve;
+            textView.setText(String.format("%.3f",we[i-text]));
+
+        }
+        String checkers=check.getSelectedItem().toString();
+        if (checkers.equals(checks[0])){
+            double ms = 0;
+            double mh = 0;
+            double me = 0;
+            textView=findViewById(R.id.ms);
+            for (int i=0;i<10;i++){
+                 ms=ms+(w[i]/u[i]);
+            }
+            ms=1/ms;
+            textView.setText(String.format("%.3f", ms));
+            textView=findViewById(R.id.rs);
+            rs= (1-ms)*100;
+            textView.setText(String.format("%.2f",rs));
+
+            textView=findViewById(R.id.mh);
+            for (int i=0;i<10;i++){
+                mh=mh+(wh[i]/uh[i]);
+            }
+            mh=1/mh;
+            textView.setText(String.format("%.3f", mh));
+            textView=findViewById(R.id.rsh);
+            rh= (1-mh)*100;
+            textView.setText(String.format("%.2f",rh));
+
+            textView=findViewById(R.id.me);
+            for (int i=0;i<7;i++){
+                me=me+(we[i]/ue[i]);
+            }
+            me=1/me;
+            textView.setText(String.format("%.3f", me));
+            textView=findViewById(R.id.rse);
+            re= (1-me)*100;
+            textView.setText(String.format("%.2f",re));
+
+        }
+        if (checkers.equals(checks[1])){
+            double ms = 1;
+            double mh = 1;
+            double me = 1;
+            textView=findViewById(R.id.ms);
+            for (int i=0;i<10;i++){
+                ms=ms*Math.pow(u[i],w[i]);
+            }
+            textView.setText(String.format("%.3f", ms));
+            textView=findViewById(R.id.rs);
+            rs= (1-ms)*100;
+            textView.setText(String.format("%.2f",rs));
+
+            textView=findViewById(R.id.mh);
+            for (int i=0;i<10;i++){
+                mh=mh*Math.pow(uh[i],wh[i]);
+            }
+            textView.setText(String.format("%.3f", mh));
+            textView=findViewById(R.id.rsh);
+            rh= (1-mh)*100;
+            textView.setText(String.format("%.2f",rh));
+
+            textView=findViewById(R.id.me);
+            for (int i=0;i<7;i++){
+                me=me*Math.pow(ue[i],we[i]);
+            }
+            textView.setText(String.format("%.3f", me));
+            textView=findViewById(R.id.rse);
+            re= (1-me)*100;
+            textView.setText(String.format("%.2f",re));
+        }
+        if (checkers.equals(checks[2])){
+            double ms = 0;
+            double mh = 0;
+            double me = 0;
+            textView=findViewById(R.id.ms);
+            for (int i=0;i<10;i++){
+                ms=ms+(w[i]*u[i]);
+            }
+            textView.setText(String.format("%.3f", ms));
+            textView=findViewById(R.id.rs);
+            rs= (1-ms)*100;
+            textView.setText(String.format("%.2f",rs));
+
+            textView=findViewById(R.id.mh);
+            for (int i=0;i<10;i++){
+                mh=mh+(wh[i]*uh[i]);
+            }
+            textView.setText(String.format("%.3f", mh));
+            textView=findViewById(R.id.rsh);
+            rh= (1-mh)*100;
+            textView.setText(String.format("%.2f",rh));
+
+            textView=findViewById(R.id.me);
+            for (int i=0;i<7;i++){
+                me=me+(we[i]*ue[i]);
+            }
+            textView.setText(String.format("%.3f", me));
+            textView=findViewById(R.id.rse);
+            re= (1-me)*100;
+            textView.setText(String.format("%.2f",re));
+        }
+        if (checkers.equals(checks[3])){
+            double ms = 0;
+            double mh = 0;
+            double me = 0;
+            textView=findViewById(R.id.ms);
+            for (int i=0;i<10;i++){
+                ms=ms+(w[i]* Math.pow(u[i],2));
+            }
+            ms=Math.sqrt(ms);
+            textView.setText(String.format("%.3f", ms));
+            textView=findViewById(R.id.rs);
+            rs= (1-ms)*100;
+            textView.setText(String.format("%.2f",rs));
+
+            textView=findViewById(R.id.mh);
+            for (int i=0;i<10;i++){
+                mh=mh+(wh[i]* Math.pow(uh[i],2));
+            }
+            mh=Math.sqrt(mh);
+            textView.setText(String.format("%.3f", mh));
+            textView=findViewById(R.id.rsh);
+            rh= (1-mh)*100;
+            textView.setText(String.format("%.2f",rh));
+
+            textView=findViewById(R.id.me);
+            for (int i=0;i<7;i++){
+                me=me+(we[i]* Math.pow(ue[i],2));
+            }
+            me=Math.sqrt(me);
+            textView.setText(String.format("%.3f", me));
+            textView=findViewById(R.id.rse);
+            re= (1-me)*100;
+            textView.setText(String.format("%.2f",re));
+        }
+    }
+
+    private double stepFour(double r, double k){
+        if (r<0){
+            return 0;
+        }
+        if (r>=0&&r<=100){
+            String j;
+            j= String.format(Locale.ROOT,"%.3f",(double) Math.pow(r/100,k));
+            return Double.parseDouble(j);
+        }
+        if (r>100){
+            return 1;
+        }
+        else return 0;
     }
 }
 /*for (int i=0;i<7    ;i++){

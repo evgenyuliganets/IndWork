@@ -339,6 +339,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <LinearLayout
@@ -1911,6 +1912,43 @@
             </LinearLayout>
 
             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Продовжити обчислення" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView156"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Виберіть сценарій"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -1993,7 +2031,7 @@
                     android:orientation="vertical">
 
                     <TableRow
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@drawable/border"
                         android:orientation="horizontal">
@@ -2013,7 +2051,9 @@
                             android:layout_marginLeft="5dp"
                             android:ems="10"
                             android:inputType="numberSigned"
-                            android:paddingTop="1dp" />
+                            android:paddingTop="1dp"
+                            android:text="10"
+                            android:textSize="12sp" />
 
                         <TextView
                             android:id="@+id/w1"
@@ -2043,7 +2083,9 @@
                             android:layout_marginLeft="5dp"
                             android:ems="10"
                             android:inputType="numberSigned"
-                            android:paddingTop="1dp" />
+                            android:paddingTop="1dp"
+                            android:text="10"
+                            android:textSize="12sp" />
 
                         <TextView
                             android:id="@+id/w2"
@@ -2074,7 +2116,9 @@
                             android:layout_marginLeft="5dp"
                             android:ems="10"
                             android:inputType="numberSigned"
-                            android:paddingTop="1dp" />
+                            android:paddingTop="1dp"
+                            android:text="10"
+                            android:textSize="12sp" />
 
                         <TextView
                             android:id="@+id/w3"
@@ -2103,7 +2147,9 @@
                             android:layout_marginLeft="5dp"
                             android:ems="10"
                             android:inputType="numberSigned"
-                            android:paddingTop="1dp" />
+                            android:paddingTop="1dp"
+                            android:text="10"
+                            android:textSize="12sp" />
 
                         <TextView
                             android:id="@+id/w4"
@@ -2132,7 +2178,9 @@
                             android:layout_marginLeft="5dp"
                             android:ems="10"
                             android:inputType="numberSigned"
-                            android:paddingTop="1dp" />
+                            android:paddingTop="1dp"
+                            android:text="10"
+                            android:textSize="12sp" />
 
                         <TextView
                             android:id="@+id/w5"
@@ -2161,7 +2209,9 @@
                             android:layout_marginLeft="5dp"
                             android:ems="10"
                             android:inputType="numberSigned"
-                            android:paddingTop="1dp" />
+                            android:paddingTop="1dp"
+                            android:text="10"
+                            android:textSize="12sp" />
 
                         <TextView
                             android:id="@+id/w6"
@@ -2190,7 +2240,9 @@
                             android:layout_marginLeft="5dp"
                             android:ems="10"
                             android:inputType="numberSigned"
-                            android:paddingTop="1dp" />
+                            android:paddingTop="1dp"
+                            android:text="10"
+                            android:textSize="12sp" />
 
                         <TextView
                             android:id="@+id/w7"
@@ -2219,7 +2271,9 @@
                             android:layout_marginLeft="5dp"
                             android:ems="10"
                             android:inputType="numberSigned"
-                            android:paddingTop="1dp" />
+                            android:paddingTop="1dp"
+                            android:text="10"
+                            android:textSize="12sp" />
 
                         <TextView
                             android:id="@+id/w8"
@@ -2248,7 +2302,9 @@
                             android:layout_marginLeft="5dp"
                             android:ems="10"
                             android:inputType="numberSigned"
-                            android:paddingTop="1dp" />
+                            android:paddingTop="1dp"
+                            android:text="10"
+                            android:textSize="12sp" />
 
                         <TextView
                             android:id="@+id/w9"
@@ -2277,12 +2333,57 @@
                             android:layout_marginLeft="5dp"
                             android:ems="10"
                             android:inputType="numberSigned"
-                            android:paddingTop="1dp" />
+                            android:paddingTop="1dp"
+                            android:text="10"
+                            android:textSize="12sp" />
 
                         <TextView
                             android:id="@+id/w10"
                             android:layout_width="45dp"
                             android:layout_height="match_parent"
+                            android:text="0" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border">
+
+                        <TextView
+                            android:id="@+id/sv41"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="M"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
+
+
+                        <TextView
+                            android:id="@+id/ms"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right|center_horizontal"
+                            android:text="0" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border">
+
+                        <TextView
+                            android:id="@+id/ssr"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="R"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
+
+
+                        <TextView
+                            android:id="@+id/rs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right|center_horizontal"
                             android:text="0" />
                     </TableRow>
                 </TableLayout>
@@ -2315,7 +2416,9 @@
                             android:layout_marginLeft="5dp"
                             android:ems="10"
                             android:inputType="numberSigned"
-                            android:paddingTop="1dp" />
+                            android:paddingTop="1dp"
+                            android:text="10"
+                            android:textSize="12sp" />
 
                         <TextView
                             android:id="@+id/wh1"
@@ -2345,7 +2448,9 @@
                             android:layout_marginLeft="5dp"
                             android:ems="10"
                             android:inputType="numberSigned"
-                            android:paddingTop="1dp" />
+                            android:paddingTop="1dp"
+                            android:text="10"
+                            android:textSize="12sp" />
 
                         <TextView
                             android:id="@+id/wh2"
@@ -2376,7 +2481,9 @@
                             android:layout_marginLeft="5dp"
                             android:ems="10"
                             android:inputType="numberSigned"
-                            android:paddingTop="1dp" />
+                            android:paddingTop="1dp"
+                            android:text="10"
+                            android:textSize="12sp" />
 
                         <TextView
                             android:id="@+id/wh3"
@@ -2405,7 +2512,9 @@
                             android:layout_marginLeft="5dp"
                             android:ems="10"
                             android:inputType="numberSigned"
-                            android:paddingTop="1dp" />
+                            android:paddingTop="1dp"
+                            android:text="10"
+                            android:textSize="12sp" />
 
                         <TextView
                             android:id="@+id/wh4"
@@ -2434,7 +2543,9 @@
                             android:layout_marginLeft="5dp"
                             android:ems="10"
                             android:inputType="numberSigned"
-                            android:paddingTop="1dp" />
+                            android:paddingTop="1dp"
+                            android:text="10"
+                            android:textSize="12sp" />
 
                         <TextView
                             android:id="@+id/wh5"
@@ -2463,7 +2574,9 @@
                             android:layout_marginLeft="5dp"
                             android:ems="10"
                             android:inputType="numberSigned"
-                            android:paddingTop="1dp" />
+                            android:paddingTop="1dp"
+                            android:text="10"
+                            android:textSize="12sp" />
 
                         <TextView
                             android:id="@+id/wh6"
@@ -2492,7 +2605,9 @@
                             android:layout_marginLeft="5dp"
                             android:ems="10"
                             android:inputType="numberSigned"
-                            android:paddingTop="1dp" />
+                            android:paddingTop="1dp"
+                            android:text="10"
+                            android:textSize="12sp" />
 
                         <TextView
                             android:id="@+id/wh7"
@@ -2521,7 +2636,9 @@
                             android:layout_marginLeft="5dp"
                             android:ems="10"
                             android:inputType="numberSigned"
-                            android:paddingTop="1dp" />
+                            android:paddingTop="1dp"
+                            android:text="10"
+                            android:textSize="12sp" />
 
                         <TextView
                             android:id="@+id/wh8"
@@ -2550,7 +2667,9 @@
                             android:layout_marginLeft="5dp"
                             android:ems="10"
                             android:inputType="numberSigned"
-                            android:paddingTop="1dp" />
+                            android:paddingTop="1dp"
+                            android:text="10"
+                            android:textSize="12sp" />
 
                         <TextView
                             android:id="@+id/wh9"
@@ -2579,12 +2698,58 @@
                             android:layout_marginLeft="5dp"
                             android:ems="10"
                             android:inputType="numberSigned"
-                            android:paddingTop="1dp" />
+                            android:paddingTop="1dp"
+                            android:text="10"
+                            android:textSize="12sp" />
 
                         <TextView
                             android:id="@+id/wh10"
                             android:layout_width="45dp"
                             android:layout_height="match_parent"
+                            android:text="0" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border">
+
+                        <TextView
+                            android:id="@+id/svm"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="M"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
+
+
+                        <TextView
+                            android:id="@+id/mh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right|center_horizontal"
+                            android:text="0" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border">
+
+                        <TextView
+                            android:id="@+id/ssrh"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="R"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
+
+
+                        <TextView
+                            android:id="@+id/rsh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right|center_horizontal"
                             android:text="0" />
                     </TableRow>
                 </TableLayout>
@@ -2617,7 +2782,9 @@
                             android:layout_marginLeft="5dp"
                             android:ems="10"
                             android:inputType="numberSigned"
-                            android:paddingTop="1dp" />
+                            android:paddingTop="1dp"
+                            android:text="10"
+                            android:textSize="12sp" />
 
                         <TextView
                             android:id="@+id/we1"
@@ -2647,7 +2814,9 @@
                             android:layout_marginLeft="5dp"
                             android:ems="10"
                             android:inputType="numberSigned"
-                            android:paddingTop="1dp" />
+                            android:paddingTop="1dp"
+                            android:text="10"
+                            android:textSize="12sp" />
 
                         <TextView
                             android:id="@+id/we2"
@@ -2678,7 +2847,9 @@
                             android:layout_marginLeft="5dp"
                             android:ems="10"
                             android:inputType="numberSigned"
-                            android:paddingTop="1dp" />
+                            android:paddingTop="1dp"
+                            android:text="10"
+                            android:textSize="12sp" />
 
                         <TextView
                             android:id="@+id/we3"
@@ -2707,7 +2878,9 @@
                             android:layout_marginLeft="5dp"
                             android:ems="10"
                             android:inputType="numberSigned"
-                            android:paddingTop="1dp" />
+                            android:paddingTop="1dp"
+                            android:text="10"
+                            android:textSize="12sp" />
 
                         <TextView
                             android:id="@+id/we4"
@@ -2736,7 +2909,9 @@
                             android:layout_marginLeft="5dp"
                             android:ems="10"
                             android:inputType="numberSigned"
-                            android:paddingTop="1dp" />
+                            android:paddingTop="1dp"
+                            android:text="10"
+                            android:textSize="12sp" />
 
                         <TextView
                             android:id="@+id/we5"
@@ -2765,7 +2940,9 @@
                             android:layout_marginLeft="5dp"
                             android:ems="10"
                             android:inputType="numberSigned"
-                            android:paddingTop="1dp" />
+                            android:paddingTop="1dp"
+                            android:text="10"
+                            android:textSize="12sp" />
 
                         <TextView
                             android:id="@+id/we6"
@@ -2794,7 +2971,9 @@
                             android:layout_marginLeft="5dp"
                             android:ems="10"
                             android:inputType="numberSigned"
-                            android:paddingTop="1dp" />
+                            android:paddingTop="1dp"
+                            android:text="10"
+                            android:textSize="12sp" />
 
                         <TextView
                             android:id="@+id/we7"
@@ -2803,7 +2982,346 @@
                             android:text="0" />
                     </TableRow>
 
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        android:layout_marginTop="90dp"
+                        android:background="@drawable/border"
+                        android:foregroundGravity="bottom"
+                        android:gravity="bottom">
+
+                        <TextView
+                            android:id="@+id/svme"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="M"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
+
+
+                        <TextView
+                            android:id="@+id/me"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right|center_horizontal"
+                            android:text="0" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border">
+
+                        <TextView
+                            android:id="@+id/ssre"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="R"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
+
+
+                        <TextView
+                            android:id="@+id/rse"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right|center_horizontal"
+                            android:text="0" />
+                    </TableRow>
+
                 </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Step 4-5"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Продовжити обчислення" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/txtSecurity"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="Security" />
+
+                <TextView
+                    android:id="@+id/txtHealthcare"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="Healthcare" />
+
+                <TextView
+                    android:id="@+id/txtEnvironment"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="Environment" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border">
+
+                        <TextView
+                            android:id="@+id/su"
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:text="S"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
+
+
+                        <TextView
+                            android:id="@+id/ssu"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right|center_horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/shu"
+                            android:layout_width="75dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right|center_horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/seu"
+                            android:layout_width="75dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right|center_horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:text="0" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border">
+
+                        <TextView
+                            android:id="@+id/eu"
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:text="E"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
+
+
+                        <TextView
+                            android:id="@+id/esu"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right|center_horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/ehu"
+                            android:layout_width="75dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right|center_horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/eeu"
+                            android:layout_width="75dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right|center_horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:text="0" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border">
+
+                        <TextView
+                            android:id="@+id/du"
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:text="D"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
+
+
+                        <TextView
+                            android:id="@+id/dsu"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right|center_horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/dhu"
+                            android:layout_width="75dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right|center_horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/deu"
+                            android:layout_width="75dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right|center_horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:text="0" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/choose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Виберіть коефіціенти"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewus"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:text="Security" />
+
+                <TextView
+                    android:id="@+id/textViewuh"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:text="Healthcare" />
+
+                <TextView
+                    android:id="@+id/textViewue"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:text="Environment" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/uss"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="bottom"
+                    android:inputType="number"
+                    android:paddingTop="1dp"
+                    android:text="10"
+                    android:textAlignment="gravity"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/ush"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="bottom"
+                    android:inputType="number"
+                    android:paddingTop="1dp"
+                    android:text="9"
+                    android:textAlignment="gravity"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/use"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="bottom"
+                    android:inputType="number"
+                    android:paddingTop="1dp"
+                    android:text="8"
+                    android:textAlignment="gravity"
+                    android:textSize="12sp" />
+
             </LinearLayout>
 
         </LinearLayout>

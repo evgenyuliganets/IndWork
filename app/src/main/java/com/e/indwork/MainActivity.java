@@ -1,14 +1,18 @@
 package com.e.indwork;
 
 import androidx.appcompat.app.AppCompatActivity;
+import it.sephiroth.android.library.tooltip.Tooltip;
 
 import android.annotation.SuppressLint;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.InputFilter;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.PopupWindow;
 import android.widget.ScrollView;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -56,6 +60,8 @@ double[]sed=new double[3];
     TextView finale;
     TextView finald;
     PieChart pieChart;
+    private ViewGroup popupContainer;
+    private PopupWindow popup;
 
 
     @SuppressLint({"CutPasteId", "DefaultLocale"})
@@ -68,6 +74,36 @@ double[]sed=new double[3];
         Button step45=findViewById(R.id.button4);
         Button step6=findViewById(R.id.button5);
         Button step78=findViewById(R.id.button6);
+        Button bs=findViewById(R.id.bs);
+        Button be=findViewById(R.id.be);
+        Button bd=findViewById(R.id.bd);
+        Button bs1=findViewById(R.id.bs1);
+        Button bs2=findViewById(R.id.bs2);
+        Button bs3=findViewById(R.id.bs3);
+        Button bs4=findViewById(R.id.bs4);
+        Button bs5=findViewById(R.id.bs5);
+        Button bs6=findViewById(R.id.bs6);
+        Button bs7=findViewById(R.id.bs7);
+        Button bs8=findViewById(R.id.bs8);
+        Button bs9=findViewById(R.id.bs9);
+        Button bs10=findViewById(R.id.bs10);
+        Button bh1=findViewById(R.id.bh1);
+        Button bh2=findViewById(R.id.bh2);
+        Button bh3=findViewById(R.id.bh3);
+        Button bh4=findViewById(R.id.bh4);
+        Button bh5=findViewById(R.id.bh5);
+        Button bh6=findViewById(R.id.bh6);
+        Button bh7=findViewById(R.id.bh7);
+        Button bh8=findViewById(R.id.bh8);
+        Button bh9=findViewById(R.id.bh9);
+        Button bh10=findViewById(R.id.bh10);
+        Button be1=findViewById(R.id.be1);
+        Button be2=findViewById(R.id.be2);
+        Button be3=findViewById(R.id.be3);
+        Button be4=findViewById(R.id.be4);
+        Button be5=findViewById(R.id.be5);
+        Button be6=findViewById(R.id.be6);
+        Button be7=findViewById(R.id.be7);
         finals=findViewById(R.id.sfinal);
         finale=findViewById(R.id.efinal);
         finald=findViewById(R.id.dfinal);
@@ -188,6 +224,41 @@ double[]sed=new double[3];
             editText = findViewById(i);
             editText.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "1")});
         }
+
+        bs1.setOnClickListener(v-> leftToolTipPopupWindow(R.id.bs1,"ситуація щодо єдиної системи диспетчерських служб: управління записами (RMS), комп’ютерно-орієнтована диспетчерська система (CAD)"));
+        bs2.setOnClickListener(v-> leftToolTipPopupWindow(R.id.bs2,"ситуація щодо роботи GIS системs"));
+        bs3.setOnClickListener(v-> leftToolTipPopupWindow(R.id.bs3,"ситуація щодо систем підтримки роботи екстрених служб, комунікацій і обміну інформацією між відомствами, пов'язаними з громадською безпекою"));
+        bs4.setOnClickListener(v-> leftToolTipPopupWindow(R.id.bs4,"ситуація щодо систем аналітики в області безпеки (відеоаналітіка, аналіз соціальних мереж і медіа, статистичний аналіз, аналіз трендів і прогнозування, ідентифікація потенційно небезпечних ситуацій)"));
+        bs5.setOnClickListener(v-> leftToolTipPopupWindow(R.id.bs5,"ситуація щодо технологій розпізнавання осіб"));
+        bs6.setOnClickListener(v-> leftToolTipPopupWindow(R.id.bs6,"ситуація щодо систем збору інформації з радарів та мобільні рішення (визначення GPS-координати абонента)"));
+        bs7.setOnClickListener(v-> leftToolTipPopupWindow(R.id.bs7,"ситуація щодо різноманітних сенсорів (сенсори як частина інтернету речей) і відповідних вбудованих рішеннях, включаючи використання сенсорів для поліпшення здоров'я і безпеки офіцерів"));
+        bs8.setOnClickListener(v-> leftToolTipPopupWindow(R.id.bs8,"ситуація щодо навчання офіцерів поліції веб технологіям за спеціальними для них програмами"));
+        bs9.setOnClickListener(v-> leftToolTipPopupWindow(R.id.bs9,"ситуація щодо мережевої інфраструктури з метою підтримки веб технологій"));
+        bs10.setOnClickListener(v-> leftToolTipPopupWindow(R.id.bs10,"ситуація щодо загальних державних/регіональних систем електронних досьє на злочинців та злочинів, включаючи єдині каталоги і системи класифікації."));
+
+        bh1.setOnClickListener(v-> leftToolTipPopupWindow(R.id.bh1,"ситуація щодо стану здоров'я та благополуччя жителів міста"));
+        bh2.setOnClickListener(v-> leftToolTipPopupWindow(R.id.bh2,"ситуація щодо доступності запису до лікаря та часові витрати на надання медичної допомоги включаючи наявність електронного документообігу"));
+        bh3.setOnClickListener(v-> leftToolTipPopupWindow(R.id.bh3,"ситуація щодо стану постійного моніторингу, можливість дистанційної консультації та реагування на небезпеки для здоров'я жителів міста"));
+        bh4.setOnClickListener(v-> leftToolTipPopupWindow(R.id.bh4,"ситуація щодо стану захисту здоров'я, через забезпечення безпеки навколишнього середовища, праці, харчових продуктів і ін.)"));
+        bh5.setOnClickListener(v-> leftToolTipPopupWindow(R.id.bh5,"ситуація зміцнення здоров'я, включаючи вплив на соціальні детермінанти і скорочення нерівностей за показниками здоров'я"));
+        bh6.setOnClickListener(v-> leftToolTipPopupWindow(R.id.bh6,"ситуація з профілактики хвороби, включаючи раннє виявлення порушень здоров'я"));
+        bh7.setOnClickListener(v-> leftToolTipPopupWindow(R.id.bh7,"ситуація щодо забезпечення сфери охорони здоров'я кваліфікованими лікарськими кадрами достатньої потужності та навчання і підвищення їх кваліфікації"));
+        bh8.setOnClickListener(v-> leftToolTipPopupWindow(R.id.bh8,"ситуація щодо забезпечення сфери охорони здоров'я кваліфікованим допоміжним персоналом достатньої потужності та навчання і підвищення їх кваліфікації"));
+        bh9.setOnClickListener(v-> leftToolTipPopupWindow(R.id.bh9,"ситуація щодо ремонту лікувальних установ, закупівлі сучасного обладнання, ліків і фінансування"));
+        bh10.setOnClickListener(v-> leftToolTipPopupWindow(R.id.bh10,"ситуація щодо інформаційно-роз'яснювальної діяльності, комунікація та соціальна мобілізація в інтересах здоров'я жителів міста"));
+
+        be1.setOnClickListener(v-> leftToolTipPopupWindow(R.id.be1,"ситуація щодо cистем контролю якості повітря"));
+        be2.setOnClickListener(v-> leftToolTipPopupWindow(R.id.be2,"ситуація щодо систем комплексного управління поводження з твердими відходами"));
+        be3.setOnClickListener(v-> leftToolTipPopupWindow(R.id.be3,"ситуація щодо використання даних з лічильників витрати води, датчиків та інших інтелектуальних пристроїв з метою прогнозування попиту і доступності ресурсів, оптимізації обсягів подачі, виявлення втрат, реалізації програм економії, оптимізації інфраструктури водопостачання та ресурсів"));
+        be4.setOnClickListener(v-> leftToolTipPopupWindow(R.id.be4,"ситуація щодо «розумних систем» поводження з очищенням стічних вод"));
+        be5.setOnClickListener(v-> leftToolTipPopupWindow(R.id.be5,"ситуація щодо систем передбачення і автономної адаптації електромереж для підвищення надійності, підключення нових джерел енергії"));
+        be6.setOnClickListener(v-> leftToolTipPopupWindow(R.id.be6,"ситуація щодо систем оптимізації та економії енергоспоживання, прогнозування аналітики і попереджувального обслуговування обладнання"));
+        be7.setOnClickListener(v-> leftToolTipPopupWindow(R.id.be7,"ситуація щодо «розумних систем» міського освітлення та систем підтримки роботи технічного персоналу"));
+
+        bs.setOnClickListener(v-> leftToolTipPopupWindow(R.id.bs,"штатний режим"));
+        be.setOnClickListener(v-> leftToolTipPopupWindow(R.id.be,"режим надзвичайної ситуації"));
+        bd.setOnClickListener(v-> leftToolTipPopupWindow(R.id.bd,"режим катастрофи"));
+
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, levels);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         ArrayAdapter<String> chadapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, checks);
@@ -1169,4 +1240,21 @@ double[]sed=new double[3];
         pieChart.setHoleColor(Color.parseColor("#000000"));
 
     }
+    public void leftToolTipPopupWindow(int id, String text) {
+        Button button = findViewById(id);
+        Tooltip.make(this,
+                new Tooltip.Builder(101)
+                        .anchor(button, Tooltip.Gravity.RIGHT)
+                        .closePolicy(new Tooltip.ClosePolicy()
+                                .insidePolicy(true, false)
+                                .outsidePolicy(true, false), 5000)
+                        .activateDelay(900)
+                        .showDelay(400)
+                        .text(text)
+                        .maxWidth(750)
+                        .withArrow(true)
+                        .withOverlay(true).build()
+        ).show();
+    }
+
 }

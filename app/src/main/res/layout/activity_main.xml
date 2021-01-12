@@ -46,6 +46,7 @@
                     android:id="@+id/h"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:gravity="center"
                     android:text="SS1"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="35dp" />
@@ -54,6 +55,7 @@
                     android:id="@+id/h1"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:gravity="center"
                     android:text="SS2"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="54dp" />
@@ -62,6 +64,7 @@
                     android:id="@+id/h2"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:gravity="center"
                     android:text="SS3"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="73dp" />
@@ -70,6 +73,7 @@
                     android:id="@+id/h3"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:gravity="center"
                     android:text="SS4"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="92dp" />
@@ -78,6 +82,7 @@
                     android:id="@+id/h4"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:gravity="center"
                     android:text="SS5"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="111dp" />
@@ -86,6 +91,7 @@
                     android:id="@+id/h5"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:gravity="center"
                     android:text="SS6"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="130dp" />
@@ -94,6 +100,7 @@
                     android:id="@+id/h6"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:gravity="center"
                     android:text="SS7"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="149dp" />
@@ -102,6 +109,7 @@
                     android:id="@+id/h7"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:gravity="center"
                     android:text="SS8"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="168dp" />
@@ -110,6 +118,7 @@
                     android:id="@+id/h8"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:gravity="center"
                     android:text="SS9"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="187dp" />
@@ -118,10 +127,117 @@
                     android:id="@+id/h9"
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
+                    android:gravity="center"
                     android:text="SS10"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="206dp" />
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/bs1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:drawable/ic_dialog_info"
+                    android:backgroundTint="#2196F3"
+                    android:backgroundTintMode="src_atop" />
+
+                <Button
+                    android:id="@+id/bs2"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:drawable/ic_dialog_info"
+                    android:backgroundTint="#2196F3"
+                    android:backgroundTintMode="src_atop" />
+
+                <Button
+                    android:id="@+id/bs3"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:drawable/ic_dialog_info"
+                    android:backgroundTint="#2196F3"
+                    android:backgroundTintMode="src_atop" />
+
+                <Button
+                    android:id="@+id/bs4"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:drawable/ic_dialog_info"
+                    android:backgroundTint="#2196F3"
+                    android:backgroundTintMode="src_atop" />
+
+                <Button
+                    android:id="@+id/bs5"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:drawable/ic_dialog_info"
+                    android:backgroundTint="#2196F3"
+                    android:backgroundTintMode="src_atop" />
+
+                <Button
+                    android:id="@+id/bs6"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:drawable/ic_dialog_info"
+                    android:backgroundTint="#2196F3"
+                    android:backgroundTintMode="src_atop" />
+
+                <Button
+                    android:id="@+id/bs7"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:drawable/ic_dialog_info"
+                    android:backgroundTint="#2196F3"
+                    android:backgroundTintMode="src_atop" />
+
+                <Button
+                    android:id="@+id/bs8"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:drawable/ic_dialog_info"
+                    android:backgroundTint="#2196F3"
+                    android:backgroundTintMode="src_atop" />
+
+                <Button
+                    android:id="@+id/bs9"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:drawable/ic_dialog_info"
+                    android:backgroundTint="#2196F3"
+                    android:backgroundTintMode="src_atop" />
+
+                <Button
+                    android:id="@+id/bs10"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:drawable/ic_dialog_info"
+                    android:backgroundTint="#2196F3"
+                    android:backgroundTintMode="src_atop" />
             </LinearLayout>
 
             <LinearLayout
@@ -132,52 +248,62 @@
                 <Spinner
                     android:id="@+id/ss"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp" />
+                    android:layout_height="30dp"
+                    android:gravity="center" />
 
                 <Spinner
                     android:id="@+id/ss1"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp" />
+                    android:layout_height="30dp"
+                    android:gravity="center" />
 
                 <Spinner
                     android:id="@+id/ss2"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp" />
+                    android:layout_height="30dp"
+                    android:gravity="center" />
 
                 <Spinner
                     android:id="@+id/ss3"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp" />
+                    android:layout_height="30dp"
+                    android:gravity="center" />
 
                 <Spinner
                     android:id="@+id/ss4"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp" />
+                    android:layout_height="30dp"
+                    android:gravity="center" />
 
                 <Spinner
                     android:id="@+id/ss5"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp" />
+                    android:layout_height="30dp"
+                    android:gravity="center" />
 
                 <Spinner
                     android:id="@+id/ss6"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp" />
+                    android:layout_height="30dp"
+                    android:gravity="center" />
 
                 <Spinner
                     android:id="@+id/ss7"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp" />
+                    android:layout_height="30dp"
+                    android:gravity="center" />
 
                 <Spinner
                     android:id="@+id/ss8"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp" />
+                    android:layout_height="30dp"
+                    android:gravity="center" />
 
                 <Spinner
                     android:id="@+id/ss9"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp" />
+                    android:layout_height="30dp"
+                    android:gravity="center" />
             </LinearLayout>
 
             <LinearLayout
@@ -191,7 +317,7 @@
                     android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:ems="10"
-                    android:gravity="bottom|right"
+                    android:gravity="bottom|center|right"
                     android:inputType="numberDecimal"
                     android:paddingTop="1dp"
                     android:text="0.55"
@@ -203,7 +329,7 @@
                     android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:ems="10"
-                    android:gravity="bottom|right"
+                    android:gravity="bottom|center|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
@@ -217,7 +343,7 @@
                     android:layout_height="30dp"
                     android:autofillHints=""
                     android:ems="10"
-                    android:gravity="bottom|right"
+                    android:gravity="bottom|center|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
@@ -230,7 +356,7 @@
                     android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:ems="10"
-                    android:gravity="bottom|right"
+                    android:gravity="bottom|center|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
@@ -243,7 +369,7 @@
                     android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:ems="10"
-                    android:gravity="bottom|right"
+                    android:gravity="bottom|center|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
@@ -256,7 +382,7 @@
                     android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:ems="10"
-                    android:gravity="bottom|right"
+                    android:gravity="bottom|center|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
@@ -269,7 +395,7 @@
                     android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:ems="10"
-                    android:gravity="bottom|right"
+                    android:gravity="bottom|center|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
@@ -282,7 +408,7 @@
                     android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:ems="10"
-                    android:gravity="bottom|right"
+                    android:gravity="bottom|center|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
@@ -295,7 +421,7 @@
                     android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:ems="10"
-                    android:gravity="bottom|right"
+                    android:gravity="bottom|center|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
@@ -308,7 +434,7 @@
                     android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:ems="10"
-                    android:gravity="bottom|right"
+                    android:gravity="bottom|center|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
@@ -318,7 +444,6 @@
             </LinearLayout>
 
         </LinearLayout>
-
         <LinearLayout
             android:id="@+id/title2"
             android:layout_width="wrap_content"
@@ -336,7 +461,6 @@
                 android:textColor="#118604"
                 android:textSize="18sp" />
         </LinearLayout>
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -352,6 +476,7 @@
                     android:id="@+id/s"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:gravity="center"
                     android:text="SH1"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="35dp" />
@@ -360,6 +485,7 @@
                     android:id="@+id/s1"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:gravity="center"
                     android:text="SH2"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="54dp" />
@@ -368,6 +494,7 @@
                     android:id="@+id/s2"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:gravity="center"
                     android:text="SH3"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="73dp" />
@@ -376,6 +503,7 @@
                     android:id="@+id/s3"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:gravity="center"
                     android:text="SH4"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="92dp" />
@@ -384,6 +512,7 @@
                     android:id="@+id/s4"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:gravity="center"
                     android:text="SH5"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="111dp" />
@@ -392,6 +521,7 @@
                     android:id="@+id/s5"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:gravity="center"
                     android:text="SH6"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="130dp" />
@@ -400,6 +530,7 @@
                     android:id="@+id/s6"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:gravity="center"
                     android:text="SH7"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="149dp" />
@@ -408,6 +539,7 @@
                     android:id="@+id/s7"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:gravity="center"
                     android:text="SH8"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="168dp" />
@@ -416,6 +548,7 @@
                     android:id="@+id/s8"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:gravity="center"
                     android:text="SH9"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="187dp" />
@@ -424,6 +557,7 @@
                     android:id="@+id/s9"
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
+                    android:gravity="center"
                     android:text="SH10"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="206dp" />
@@ -435,55 +569,171 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
+                <Button
+                    android:id="@+id/bh1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:drawable/ic_dialog_info"
+                    android:backgroundTint="#2196F3"
+                    android:backgroundTintMode="src_atop" />
+
+                <Button
+                    android:id="@+id/bh2"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:drawable/ic_dialog_info"
+                    android:backgroundTint="#2196F3"
+                    android:backgroundTintMode="src_atop" />
+
+                <Button
+                    android:id="@+id/bh3"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:drawable/ic_dialog_info"
+                    android:backgroundTint="#2196F3"
+                    android:backgroundTintMode="src_atop" />
+
+                <Button
+                    android:id="@+id/bh4"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:drawable/ic_dialog_info"
+                    android:backgroundTint="#2196F3"
+                    android:backgroundTintMode="src_atop" />
+
+                <Button
+                    android:id="@+id/bh5"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:drawable/ic_dialog_info"
+                    android:backgroundTint="#2196F3"
+                    android:backgroundTintMode="src_atop" />
+
+                <Button
+                    android:id="@+id/bh6"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:drawable/ic_dialog_info"
+                    android:backgroundTint="#2196F3"
+                    android:backgroundTintMode="src_atop" />
+
+                <Button
+                    android:id="@+id/bh7"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:drawable/ic_dialog_info"
+                    android:backgroundTint="#2196F3"
+                    android:backgroundTintMode="src_atop" />
+
+                <Button
+                    android:id="@+id/bh8"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:drawable/ic_dialog_info"
+                    android:backgroundTint="#2196F3"
+                    android:backgroundTintMode="src_atop" />
+
+                <Button
+                    android:id="@+id/bh9"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:drawable/ic_dialog_info"
+                    android:backgroundTint="#2196F3"
+                    android:backgroundTintMode="src_atop" />
+
+                <Button
+                    android:id="@+id/bh10"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:drawable/ic_dialog_info"
+                    android:backgroundTint="#2196F3"
+                    android:backgroundTintMode="src_atop" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
                 <Spinner
                     android:id="@+id/sh"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp" />
+                    android:layout_height="30dp"
+                    android:gravity="center" />
 
                 <Spinner
                     android:id="@+id/sh1"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp" />
+                    android:layout_height="30dp"
+                    android:gravity="center" />
 
                 <Spinner
                     android:id="@+id/sh2"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp" />
+                    android:layout_height="30dp"
+                    android:gravity="center" />
 
                 <Spinner
                     android:id="@+id/sh3"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp" />
+                    android:layout_height="30dp"
+                    android:gravity="center" />
 
                 <Spinner
                     android:id="@+id/sh4"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp" />
+                    android:layout_height="30dp"
+                    android:gravity="center" />
 
                 <Spinner
                     android:id="@+id/sh5"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp" />
+                    android:layout_height="30dp"
+                    android:gravity="center" />
 
                 <Spinner
                     android:id="@+id/sh6"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp" />
+                    android:layout_height="30dp"
+                    android:gravity="center" />
 
                 <Spinner
                     android:id="@+id/sh7"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp" />
+                    android:layout_height="30dp"
+                    android:gravity="center" />
 
                 <Spinner
                     android:id="@+id/sh8"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp" />
+                    android:layout_height="30dp"
+                    android:gravity="center" />
 
                 <Spinner
                     android:id="@+id/sh9"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp" />
+                    android:layout_height="30dp"
+                    android:gravity="center" />
             </LinearLayout>
 
             <LinearLayout
@@ -497,7 +747,7 @@
                     android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:ems="10"
-                    android:gravity="bottom|right"
+                    android:gravity="bottom|center|right"
                     android:inputType="numberDecimal"
                     android:paddingTop="1dp"
                     android:text="0.72"
@@ -509,7 +759,7 @@
                     android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:ems="10"
-                    android:gravity="bottom|right"
+                    android:gravity="bottom|center|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
@@ -523,7 +773,7 @@
                     android:layout_height="30dp"
                     android:autofillHints=""
                     android:ems="10"
-                    android:gravity="bottom|right"
+                    android:gravity="bottom|center|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
@@ -536,7 +786,7 @@
                     android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:ems="10"
-                    android:gravity="bottom|right"
+                    android:gravity="bottom|center|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
@@ -549,7 +799,7 @@
                     android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:ems="10"
-                    android:gravity="bottom|right"
+                    android:gravity="bottom|center|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
@@ -562,7 +812,7 @@
                     android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:ems="10"
-                    android:gravity="bottom|right"
+                    android:gravity="bottom|center|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
@@ -575,7 +825,7 @@
                     android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:ems="10"
-                    android:gravity="bottom|right"
+                    android:gravity="bottom|center|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
@@ -588,7 +838,7 @@
                     android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:ems="10"
-                    android:gravity="bottom|right"
+                    android:gravity="bottom|center|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
@@ -601,7 +851,7 @@
                     android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:ems="10"
-                    android:gravity="bottom|right"
+                    android:gravity="bottom|center|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
@@ -614,7 +864,7 @@
                     android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:ems="10"
-                    android:gravity="bottom|right"
+                    android:gravity="bottom|center|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
@@ -624,6 +874,7 @@
             </LinearLayout>
 
         </LinearLayout>
+
 
         <LinearLayout
             android:id="@+id/title3"
@@ -658,6 +909,7 @@
                     android:id="@+id/se"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:gravity="center"
                     android:text="SE1"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="35dp" />
@@ -666,6 +918,7 @@
                     android:id="@+id/se1"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:gravity="center"
                     android:text="SE2"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="54dp" />
@@ -674,6 +927,7 @@
                     android:id="@+id/se2"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:gravity="center"
                     android:text="SE3"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="73dp" />
@@ -682,6 +936,7 @@
                     android:id="@+id/se3"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:gravity="center"
                     android:text="SE4"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="92dp" />
@@ -690,6 +945,7 @@
                     android:id="@+id/se4"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:gravity="center"
                     android:text="SE5"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="111dp" />
@@ -698,6 +954,7 @@
                     android:id="@+id/se5"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:gravity="center"
                     android:text="SE6"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="130dp" />
@@ -706,6 +963,7 @@
                     android:id="@+id/se6"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:gravity="center"
                     android:text="SE7"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="149dp" />
@@ -717,40 +975,124 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
+                <Button
+                    android:id="@+id/be1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:drawable/ic_dialog_info"
+                    android:backgroundTint="#2196F3"
+                    android:backgroundTintMode="src_atop" />
+
+                <Button
+                    android:id="@+id/be2"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:drawable/ic_dialog_info"
+                    android:backgroundTint="#2196F3"
+                    android:backgroundTintMode="src_atop" />
+
+                <Button
+                    android:id="@+id/be3"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:drawable/ic_dialog_info"
+                    android:backgroundTint="#2196F3"
+                    android:backgroundTintMode="src_atop" />
+
+                <Button
+                    android:id="@+id/be4"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:drawable/ic_dialog_info"
+                    android:backgroundTint="#2196F3"
+                    android:backgroundTintMode="src_atop" />
+
+                <Button
+                    android:id="@+id/be5"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:drawable/ic_dialog_info"
+                    android:backgroundTint="#2196F3"
+                    android:backgroundTintMode="src_atop" />
+
+                <Button
+                    android:id="@+id/be6"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:drawable/ic_dialog_info"
+                    android:backgroundTint="#2196F3"
+                    android:backgroundTintMode="src_atop" />
+
+                <Button
+                    android:id="@+id/be7"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:drawable/ic_dialog_info"
+                    android:backgroundTint="#2196F3"
+                    android:backgroundTintMode="src_atop" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
                 <Spinner
                     android:id="@+id/she"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp" />
+                    android:layout_height="30dp"
+                    android:gravity="center" />
 
                 <Spinner
                     android:id="@+id/she1"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp" />
+                    android:layout_height="30dp"
+                    android:gravity="center" />
 
                 <Spinner
                     android:id="@+id/she2"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp" />
+                    android:layout_height="30dp"
+                    android:gravity="center" />
 
                 <Spinner
                     android:id="@+id/she3"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp" />
+                    android:layout_height="30dp"
+                    android:gravity="center" />
 
                 <Spinner
                     android:id="@+id/she4"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp" />
+                    android:layout_height="30dp"
+                    android:gravity="center" />
 
                 <Spinner
                     android:id="@+id/she5"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp" />
+                    android:layout_height="30dp"
+                    android:gravity="center" />
 
                 <Spinner
                     android:id="@+id/she6"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp" />
+                    android:layout_height="30dp"
+                    android:gravity="center" />
 
             </LinearLayout>
 
@@ -765,7 +1107,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:ems="10"
-                    android:gravity="bottom|right"
+                    android:gravity="bottom|center|right"
                     android:inputType="numberDecimal"
                     android:paddingTop="1dp"
                     android:text="0.93"
@@ -777,7 +1119,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:ems="10"
-                    android:gravity="bottom|right"
+                    android:gravity="bottom|center|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
@@ -791,7 +1133,7 @@
                     android:layout_height="30dp"
                     android:autofillHints=""
                     android:ems="10"
-                    android:gravity="bottom|right"
+                    android:gravity="bottom|center|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
@@ -804,7 +1146,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:ems="10"
-                    android:gravity="bottom|right"
+                    android:gravity="bottom|center|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
@@ -817,7 +1159,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:ems="10"
-                    android:gravity="bottom|right"
+                    android:gravity="bottom|center|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
@@ -830,7 +1172,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:ems="10"
-                    android:gravity="bottom|right"
+                    android:gravity="bottom|center|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
@@ -843,7 +1185,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
                     android:ems="10"
-                    android:gravity="bottom|right"
+                    android:gravity="bottom|center|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
@@ -885,7 +1227,7 @@
                     android:id="@+id/textView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Крок 1"
+                    android:text="Крок 1. Фазифікація вхідних гібридних даних"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="18sp" />
 
@@ -895,6 +1237,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Введіть данні"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="14sp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1906,7 +2257,7 @@
                     android:id="@+id/textView55"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Крок 2-3"
+                    android:text="Крок 2-3.Оцінювання ризику у штатному режимі, надзвичайної ситуації та катастрофи"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="18sp" />
 
@@ -3047,7 +3398,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Крок 4-5"
+                    android:text="Крок 4-5.Оцінювання ризику у штатному режимі, надзвичайної ситуації та катастрофи"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="18sp" />
 
@@ -3121,13 +3472,29 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/border">
 
-                        <TextView
-                            android:id="@+id/su"
-                            android:layout_width="30dp"
+                        <LinearLayout
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="S"
-                            tools:layout_editor_absoluteX="16dp"
-                            tools:layout_editor_absoluteY="35dp" />
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/su"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:text="S"
+                                tools:layout_editor_absoluteX="16dp"
+                                tools:layout_editor_absoluteY="35dp" />
+
+                            <Button
+                                android:id="@+id/bs"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@android:drawable/ic_dialog_info"
+                                android:backgroundTint="#2196F3"
+                                android:backgroundTintMode="src_atop" />
+
+                        </LinearLayout>
 
 
                         <TextView
@@ -3159,16 +3526,28 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:background="@drawable/border">
-
-                        <TextView
-                            android:id="@+id/eu"
-                            android:layout_width="30dp"
+                        <LinearLayout
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="E"
-                            tools:layout_editor_absoluteX="16dp"
-                            tools:layout_editor_absoluteY="35dp" />
+                            android:orientation="horizontal">
 
+                            <TextView
+                                android:id="@+id/eu"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:text="E"
+                                tools:layout_editor_absoluteX="16dp"
+                                tools:layout_editor_absoluteY="35dp" />
 
+                        <Button
+                            android:id="@+id/be"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@android:drawable/ic_dialog_info"
+                            android:backgroundTint="#2196F3"
+                            android:backgroundTintMode="src_atop" />
+                        </LinearLayout>
                         <TextView
                             android:id="@+id/esu"
                             android:layout_width="40dp"
@@ -3198,16 +3577,28 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:background="@drawable/border">
-
-                        <TextView
-                            android:id="@+id/du"
-                            android:layout_width="30dp"
+                        <LinearLayout
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="D"
-                            tools:layout_editor_absoluteX="16dp"
-                            tools:layout_editor_absoluteY="35dp" />
+                            android:orientation="horizontal">
 
+                            <TextView
+                                android:id="@+id/du"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:text="D"
+                                tools:layout_editor_absoluteX="16dp"
+                                tools:layout_editor_absoluteY="35dp" />
 
+                        <Button
+                            android:id="@+id/bd"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@android:drawable/ic_dialog_info"
+                            android:backgroundTint="#2196F3"
+                            android:backgroundTintMode="src_atop" />
+                        </LinearLayout>
                         <TextView
                             android:id="@+id/dsu"
                             android:layout_width="40dp"
@@ -3242,7 +3633,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:gravity="center_horizontal"
                 android:orientation="horizontal">
 
                 <TextView
@@ -3339,7 +3729,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Крок 6"
+                    android:text="Крок 6.Дефазифікація даних та визначення рівня ризику "
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="18sp" />
 
@@ -3349,14 +3739,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="vertical">
 
                 <Button
                     android:id="@+id/button5"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Продовжити обчислення" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Введіть данні"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -3719,7 +4118,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Крок 7-8"
+                    android:text="Крок 7-8.Виведення висновку, визначення прийнятності ризику та оцінювання необхідної кількості ресурсів "
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="18sp" />
 
@@ -3869,6 +4268,15 @@
                     android:layout_height="300dp" />
             </LinearLayout>
 
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Введіть данні"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp" />
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -3880,7 +4288,8 @@
                     android:id="@+id/txt123"
                     android:layout_width="75dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:text="Кошти" />
 
                 <TextView
                     android:id="@+id/txts2"

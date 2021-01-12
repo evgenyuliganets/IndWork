@@ -9,6 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
         android:orientation="vertical"
         tools:context=".MainActivity">
 
@@ -180,39 +181,39 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="30dp"
+                android:layout_width="35dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
 
                 <EditText
                     android:id="@+id/editText1"
-                    android:layout_width="match_parent"
+                    android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:ems="10"
                     android:gravity="bottom|right"
                     android:inputType="numberDecimal"
                     android:paddingTop="1dp"
-                    android:text="0.1"
+                    android:text="0.55"
                     android:textAlignment="gravity"
                     android:textSize="12sp" />
 
                 <EditText
                     android:id="@+id/editText2"
-                    android:layout_width="match_parent"
+                    android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:ems="10"
                     android:gravity="bottom|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
-                    android:text="0.1"
+                    android:text="0.75"
                     android:textAlignment="gravity"
                     android:textSize="12sp" />
 
                 <EditText
                     android:id="@+id/editText3"
-                    android:layout_width="match_parent"
+                    android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:autofillHints=""
                     android:ems="10"
@@ -220,98 +221,98 @@
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
-                    android:text="0.1"
+                    android:text="0.83"
                     android:textAlignment="gravity"
                     android:textSize="12sp" />
 
                 <EditText
                     android:id="@+id/editText4"
-                    android:layout_width="match_parent"
+                    android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:ems="10"
                     android:gravity="bottom|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
-                    android:text="0.1"
+                    android:text="0.69"
                     android:textAlignment="gravity"
                     android:textSize="12sp" />
 
                 <EditText
                     android:id="@+id/editText5"
-                    android:layout_width="match_parent"
+                    android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:ems="10"
                     android:gravity="bottom|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
-                    android:text="0.1"
+                    android:text="0.78"
                     android:textAlignment="gravity"
                     android:textSize="12sp" />
 
                 <EditText
                     android:id="@+id/editText6"
-                    android:layout_width="match_parent"
+                    android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:ems="10"
                     android:gravity="bottom|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
-                    android:text="0.1"
+                    android:text="0.82"
                     android:textAlignment="gravity"
                     android:textSize="12sp" />
 
                 <EditText
                     android:id="@+id/editText7"
-                    android:layout_width="match_parent"
+                    android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:ems="10"
                     android:gravity="bottom|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
-                    android:text="0.1"
+                    android:text="0.94"
                     android:textAlignment="gravity"
                     android:textSize="12sp" />
 
                 <EditText
                     android:id="@+id/editText8"
-                    android:layout_width="match_parent"
+                    android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:ems="10"
                     android:gravity="bottom|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
-                    android:text="0.1"
+                    android:text="0.89"
                     android:textAlignment="gravity"
                     android:textSize="12sp" />
 
                 <EditText
                     android:id="@+id/editText9"
-                    android:layout_width="match_parent"
+                    android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:ems="10"
                     android:gravity="bottom|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
-                    android:text="0.1"
+                    android:text="0.55"
                     android:textAlignment="gravity"
                     android:textSize="12sp" />
 
                 <EditText
                     android:id="@+id/editText10"
-                    android:layout_width="match_parent"
+                    android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:ems="10"
                     android:gravity="bottom|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
-                    android:text="0.1"
+                    android:text="0.86"
                     android:textAlignment="gravity"
                     android:textSize="12sp" />
             </LinearLayout>
@@ -486,39 +487,39 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="30dp"
+                android:layout_width="35dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
 
                 <EditText
                     android:id="@+id/editTexth1"
-                    android:layout_width="match_parent"
+                    android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:ems="10"
                     android:gravity="bottom|right"
                     android:inputType="numberDecimal"
                     android:paddingTop="1dp"
-                    android:text="0.1"
+                    android:text="0.72"
                     android:textAlignment="gravity"
                     android:textSize="12sp" />
 
                 <EditText
                     android:id="@+id/editTexth2"
-                    android:layout_width="match_parent"
+                    android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:ems="10"
                     android:gravity="bottom|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
-                    android:text="0.1"
+                    android:text="0.85"
                     android:textAlignment="gravity"
                     android:textSize="12sp" />
 
                 <EditText
                     android:id="@+id/editTexth3"
-                    android:layout_width="match_parent"
+                    android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:autofillHints=""
                     android:ems="10"
@@ -526,98 +527,98 @@
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
-                    android:text="0.1"
+                    android:text="0.91"
                     android:textAlignment="gravity"
                     android:textSize="12sp" />
 
                 <EditText
                     android:id="@+id/editTexth4"
-                    android:layout_width="match_parent"
+                    android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:ems="10"
                     android:gravity="bottom|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
-                    android:text="0.1"
+                    android:text="0.86"
                     android:textAlignment="gravity"
                     android:textSize="12sp" />
 
                 <EditText
                     android:id="@+id/editTexth5"
-                    android:layout_width="match_parent"
+                    android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:ems="10"
                     android:gravity="bottom|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
-                    android:text="0.1"
+                    android:text="0.78"
                     android:textAlignment="gravity"
                     android:textSize="12sp" />
 
                 <EditText
                     android:id="@+id/editTexth6"
-                    android:layout_width="match_parent"
+                    android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:ems="10"
                     android:gravity="bottom|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
-                    android:text="0.1"
+                    android:text="0.77"
                     android:textAlignment="gravity"
                     android:textSize="12sp" />
 
                 <EditText
                     android:id="@+id/editTexth7"
-                    android:layout_width="match_parent"
+                    android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:ems="10"
                     android:gravity="bottom|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
-                    android:text="0.1"
+                    android:text="0.94"
                     android:textAlignment="gravity"
                     android:textSize="12sp" />
 
                 <EditText
                     android:id="@+id/editTexth8"
-                    android:layout_width="match_parent"
+                    android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:ems="10"
                     android:gravity="bottom|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
-                    android:text="0.1"
+                    android:text="0.96"
                     android:textAlignment="gravity"
                     android:textSize="12sp" />
 
                 <EditText
                     android:id="@+id/editTexth9"
-                    android:layout_width="match_parent"
+                    android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:ems="10"
                     android:gravity="bottom|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
-                    android:text="0.1"
+                    android:text="0.29"
                     android:textAlignment="gravity"
                     android:textSize="12sp" />
 
                 <EditText
                     android:id="@+id/editTexth10"
-                    android:layout_width="match_parent"
+                    android:layout_width="35dp"
                     android:layout_height="30dp"
                     android:ems="10"
                     android:gravity="bottom|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
-                    android:text="0.1"
+                    android:text="0.78"
                     android:textAlignment="gravity"
                     android:textSize="12sp" />
             </LinearLayout>
@@ -754,7 +755,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="30dp"
+                android:layout_width="35dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
@@ -767,7 +768,7 @@
                     android:gravity="bottom|right"
                     android:inputType="numberDecimal"
                     android:paddingTop="1dp"
-                    android:text="0.1"
+                    android:text="0.93"
                     android:textAlignment="gravity"
                     android:textSize="12sp" />
 
@@ -780,7 +781,7 @@
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
-                    android:text="0.1"
+                    android:text="0.93"
                     android:textAlignment="gravity"
                     android:textSize="12sp" />
 
@@ -794,7 +795,7 @@
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
-                    android:text="0.1"
+                    android:text="0.97"
                     android:textAlignment="gravity"
                     android:textSize="12sp" />
 
@@ -807,7 +808,7 @@
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
-                    android:text="0.1"
+                    android:text="0.75"
                     android:textAlignment="gravity"
                     android:textSize="12sp" />
 
@@ -820,7 +821,7 @@
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
-                    android:text="0.1"
+                    android:text="0.82"
                     android:textAlignment="gravity"
                     android:textSize="12sp" />
 
@@ -833,20 +834,20 @@
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
-                    android:text="0.1"
+                    android:text="0.92"
                     android:textAlignment="gravity"
                     android:textSize="12sp" />
 
                 <EditText
                     android:id="@+id/editTexthe7"
                     android:layout_width="match_parent"
-                    android:layout_height="30dp"
+                    android:layout_height="35dp"
                     android:ems="10"
                     android:gravity="bottom|right"
                     android:inputType="numberDecimal"
                     android:numeric="decimal"
                     android:paddingTop="1dp"
-                    android:text="0.1"
+                    android:text="0.37"
                     android:textAlignment="gravity"
                     android:textSize="12sp" />
 
@@ -884,7 +885,7 @@
                     android:id="@+id/textView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Step 1"
+                    android:text="Крок 1"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="18sp" />
 
@@ -1905,7 +1906,7 @@
                     android:id="@+id/textView55"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Step 2-3"
+                    android:text="Крок 2-3"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="18sp" />
 
@@ -1932,6 +1933,12 @@
                 android:gravity="center_horizontal"
                 android:orientation="horizontal">
 
+                <Spinner
+                    android:id="@+id/check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1" />
+
                 <TextView
                     android:id="@+id/textView156"
                     android:layout_width="wrap_content"
@@ -1939,12 +1946,6 @@
                     android:text="Виберіть сценарій"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="14sp" />
-
-                <Spinner
-                    android:id="@+id/check"
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_weight="1" />
 
             </LinearLayout>
 
@@ -2036,14 +2037,6 @@
                         android:background="@drawable/border"
                         android:orientation="horizontal">
 
-                        <TextView
-                            android:id="@+id/s31v"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="SS1"
-                            tools:layout_editor_absoluteX="16dp"
-                            tools:layout_editor_absoluteY="35dp" />
-
                         <EditText
                             android:id="@+id/v1"
                             android:layout_width="30dp"
@@ -2054,6 +2047,14 @@
                             android:paddingTop="1dp"
                             android:text="10"
                             android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/s31v"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="SS1"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
 
                         <TextView
                             android:id="@+id/w1"
@@ -2068,14 +2069,6 @@
                         android:background="@drawable/border"
                         android:orientation="horizontal">
 
-                        <TextView
-                            android:id="@+id/s32v"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="SS2"
-                            tools:layout_editor_absoluteX="16dp"
-                            tools:layout_editor_absoluteY="35dp" />
-
                         <EditText
                             android:id="@+id/v2"
                             android:layout_width="30dp"
@@ -2084,8 +2077,16 @@
                             android:ems="10"
                             android:inputType="numberSigned"
                             android:paddingTop="1dp"
-                            android:text="10"
+                            android:text="9"
                             android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/s32v"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="SS2"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
 
                         <TextView
                             android:id="@+id/w2"
@@ -2101,14 +2102,6 @@
                         android:background="@drawable/border"
                         android:orientation="horizontal">
 
-                        <TextView
-                            android:id="@+id/sv33"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="SS3"
-                            tools:layout_editor_absoluteX="16dp"
-                            tools:layout_editor_absoluteY="35dp" />
-
                         <EditText
                             android:id="@+id/v3"
                             android:layout_width="30dp"
@@ -2117,8 +2110,16 @@
                             android:ems="10"
                             android:inputType="numberSigned"
                             android:paddingTop="1dp"
-                            android:text="10"
+                            android:text="9"
                             android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/sv33"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="SS3"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
 
                         <TextView
                             android:id="@+id/w3"
@@ -2132,14 +2133,6 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/border">
 
-                        <TextView
-                            android:id="@+id/sv34"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="SS4"
-                            tools:layout_editor_absoluteX="16dp"
-                            tools:layout_editor_absoluteY="35dp" />
-
                         <EditText
                             android:id="@+id/v4"
                             android:layout_width="30dp"
@@ -2150,6 +2143,14 @@
                             android:paddingTop="1dp"
                             android:text="10"
                             android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/sv34"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="SS4"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
 
                         <TextView
                             android:id="@+id/w4"
@@ -2163,14 +2164,6 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/border">
 
-                        <TextView
-                            android:id="@+id/sv35"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="SS5"
-                            tools:layout_editor_absoluteX="16dp"
-                            tools:layout_editor_absoluteY="35dp" />
-
                         <EditText
                             android:id="@+id/v5"
                             android:layout_width="30dp"
@@ -2179,8 +2172,16 @@
                             android:ems="10"
                             android:inputType="numberSigned"
                             android:paddingTop="1dp"
-                            android:text="10"
+                            android:text="9"
                             android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/sv35"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="SS5"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
 
                         <TextView
                             android:id="@+id/w5"
@@ -2194,14 +2195,6 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/border">
 
-                        <TextView
-                            android:id="@+id/sv36"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="SS6"
-                            tools:layout_editor_absoluteX="16dp"
-                            tools:layout_editor_absoluteY="35dp" />
-
                         <EditText
                             android:id="@+id/v6"
                             android:layout_width="30dp"
@@ -2210,8 +2203,16 @@
                             android:ems="10"
                             android:inputType="numberSigned"
                             android:paddingTop="1dp"
-                            android:text="10"
+                            android:text="7"
                             android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/sv36"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="SS6"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
 
                         <TextView
                             android:id="@+id/w6"
@@ -2225,14 +2226,6 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/border">
 
-                        <TextView
-                            android:id="@+id/sv37"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="SS7"
-                            tools:layout_editor_absoluteX="16dp"
-                            tools:layout_editor_absoluteY="35dp" />
-
                         <EditText
                             android:id="@+id/v7"
                             android:layout_width="30dp"
@@ -2241,8 +2234,16 @@
                             android:ems="10"
                             android:inputType="numberSigned"
                             android:paddingTop="1dp"
-                            android:text="10"
+                            android:text="8"
                             android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/sv37"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="SS7"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
 
                         <TextView
                             android:id="@+id/w7"
@@ -2256,14 +2257,6 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/border">
 
-                        <TextView
-                            android:id="@+id/sv38"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="SS8"
-                            tools:layout_editor_absoluteX="16dp"
-                            tools:layout_editor_absoluteY="35dp" />
-
                         <EditText
                             android:id="@+id/v8"
                             android:layout_width="30dp"
@@ -2272,8 +2265,16 @@
                             android:ems="10"
                             android:inputType="numberSigned"
                             android:paddingTop="1dp"
-                            android:text="10"
+                            android:text="7"
                             android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/sv38"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="SS8"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
 
                         <TextView
                             android:id="@+id/w8"
@@ -2287,14 +2288,6 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/border">
 
-                        <TextView
-                            android:id="@+id/sv39"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="SS9"
-                            tools:layout_editor_absoluteX="16dp"
-                            tools:layout_editor_absoluteY="35dp" />
-
                         <EditText
                             android:id="@+id/v9"
                             android:layout_width="30dp"
@@ -2303,8 +2296,16 @@
                             android:ems="10"
                             android:inputType="numberSigned"
                             android:paddingTop="1dp"
-                            android:text="10"
+                            android:text="7"
                             android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/sv39"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="SS9"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
 
                         <TextView
                             android:id="@+id/w9"
@@ -2318,14 +2319,6 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/border">
 
-                        <TextView
-                            android:id="@+id/sv40"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="S10"
-                            tools:layout_editor_absoluteX="16dp"
-                            tools:layout_editor_absoluteY="35dp" />
-
                         <EditText
                             android:id="@+id/v10"
                             android:layout_width="30dp"
@@ -2334,8 +2327,16 @@
                             android:ems="10"
                             android:inputType="numberSigned"
                             android:paddingTop="1dp"
-                            android:text="10"
+                            android:text="8"
                             android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/sv40"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="S10"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
 
                         <TextView
                             android:id="@+id/w10"
@@ -2365,6 +2366,7 @@
                             android:layout_gravity="right|center_horizontal"
                             android:text="0" />
                     </TableRow>
+
                     <TableRow
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
@@ -2401,14 +2403,6 @@
                         android:background="@drawable/border"
                         android:orientation="horizontal">
 
-                        <TextView
-                            android:id="@+id/svh31"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="SH1"
-                            tools:layout_editor_absoluteX="16dp"
-                            tools:layout_editor_absoluteY="35dp" />
-
                         <EditText
                             android:id="@+id/vh1"
                             android:layout_width="30dp"
@@ -2419,6 +2413,14 @@
                             android:paddingTop="1dp"
                             android:text="10"
                             android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/svh31"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="SH1"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
 
                         <TextView
                             android:id="@+id/wh1"
@@ -2433,14 +2435,6 @@
                         android:background="@drawable/border"
                         android:orientation="horizontal">
 
-                        <TextView
-                            android:id="@+id/shv32"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="SH2"
-                            tools:layout_editor_absoluteX="16dp"
-                            tools:layout_editor_absoluteY="35dp" />
-
                         <EditText
                             android:id="@+id/vh2"
                             android:layout_width="30dp"
@@ -2449,8 +2443,16 @@
                             android:ems="10"
                             android:inputType="numberSigned"
                             android:paddingTop="1dp"
-                            android:text="10"
+                            android:text="9"
                             android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/shv32"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="SH2"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
 
                         <TextView
                             android:id="@+id/wh2"
@@ -2466,14 +2468,6 @@
                         android:background="@drawable/border"
                         android:orientation="horizontal">
 
-                        <TextView
-                            android:id="@+id/svh33"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="SH3"
-                            tools:layout_editor_absoluteX="16dp"
-                            tools:layout_editor_absoluteY="35dp" />
-
                         <EditText
                             android:id="@+id/vh3"
                             android:layout_width="30dp"
@@ -2482,8 +2476,16 @@
                             android:ems="10"
                             android:inputType="numberSigned"
                             android:paddingTop="1dp"
-                            android:text="10"
+                            android:text="9"
                             android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/svh33"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="SH3"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
 
                         <TextView
                             android:id="@+id/wh3"
@@ -2497,14 +2499,6 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/border">
 
-                        <TextView
-                            android:id="@+id/svh34"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="SH4"
-                            tools:layout_editor_absoluteX="16dp"
-                            tools:layout_editor_absoluteY="35dp" />
-
                         <EditText
                             android:id="@+id/vh4"
                             android:layout_width="30dp"
@@ -2513,8 +2507,16 @@
                             android:ems="10"
                             android:inputType="numberSigned"
                             android:paddingTop="1dp"
-                            android:text="10"
+                            android:text="8"
                             android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/svh34"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="SH4"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
 
                         <TextView
                             android:id="@+id/wh4"
@@ -2528,14 +2530,6 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/border">
 
-                        <TextView
-                            android:id="@+id/shv35"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="SH5"
-                            tools:layout_editor_absoluteX="16dp"
-                            tools:layout_editor_absoluteY="35dp" />
-
                         <EditText
                             android:id="@+id/vh5"
                             android:layout_width="30dp"
@@ -2544,8 +2538,16 @@
                             android:ems="10"
                             android:inputType="numberSigned"
                             android:paddingTop="1dp"
-                            android:text="10"
+                            android:text="7"
                             android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/shv35"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="SH5"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
 
                         <TextView
                             android:id="@+id/wh5"
@@ -2559,14 +2561,6 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/border">
 
-                        <TextView
-                            android:id="@+id/svh36"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="SH6"
-                            tools:layout_editor_absoluteX="16dp"
-                            tools:layout_editor_absoluteY="35dp" />
-
                         <EditText
                             android:id="@+id/vh6"
                             android:layout_width="30dp"
@@ -2575,8 +2569,16 @@
                             android:ems="10"
                             android:inputType="numberSigned"
                             android:paddingTop="1dp"
-                            android:text="10"
+                            android:text="8"
                             android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/svh36"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="SH6"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
 
                         <TextView
                             android:id="@+id/wh6"
@@ -2590,14 +2592,6 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/border">
 
-                        <TextView
-                            android:id="@+id/svh37"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="SH7"
-                            tools:layout_editor_absoluteX="16dp"
-                            tools:layout_editor_absoluteY="35dp" />
-
                         <EditText
                             android:id="@+id/vh7"
                             android:layout_width="30dp"
@@ -2608,6 +2602,14 @@
                             android:paddingTop="1dp"
                             android:text="10"
                             android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/svh37"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="SH7"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
 
                         <TextView
                             android:id="@+id/wh7"
@@ -2621,14 +2623,6 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/border">
 
-                        <TextView
-                            android:id="@+id/svh38"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="SH8"
-                            tools:layout_editor_absoluteX="16dp"
-                            tools:layout_editor_absoluteY="35dp" />
-
                         <EditText
                             android:id="@+id/vh8"
                             android:layout_width="30dp"
@@ -2637,8 +2631,16 @@
                             android:ems="10"
                             android:inputType="numberSigned"
                             android:paddingTop="1dp"
-                            android:text="10"
+                            android:text="9"
                             android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/svh38"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="SH8"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
 
                         <TextView
                             android:id="@+id/wh8"
@@ -2652,14 +2654,6 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/border">
 
-                        <TextView
-                            android:id="@+id/svh39"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="SH9"
-                            tools:layout_editor_absoluteX="16dp"
-                            tools:layout_editor_absoluteY="35dp" />
-
                         <EditText
                             android:id="@+id/vh9"
                             android:layout_width="30dp"
@@ -2668,8 +2662,16 @@
                             android:ems="10"
                             android:inputType="numberSigned"
                             android:paddingTop="1dp"
-                            android:text="10"
+                            android:text="9"
                             android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/svh39"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="SH9"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
 
                         <TextView
                             android:id="@+id/wh9"
@@ -2683,14 +2685,6 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/border">
 
-                        <TextView
-                            android:id="@+id/svh40"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="H10"
-                            tools:layout_editor_absoluteX="16dp"
-                            tools:layout_editor_absoluteY="35dp" />
-
                         <EditText
                             android:id="@+id/vh10"
                             android:layout_width="30dp"
@@ -2699,8 +2693,16 @@
                             android:ems="10"
                             android:inputType="numberSigned"
                             android:paddingTop="1dp"
-                            android:text="10"
+                            android:text="6"
                             android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/svh40"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="H10"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
 
                         <TextView
                             android:id="@+id/wh10"
@@ -2731,6 +2733,7 @@
                             android:layout_gravity="right|center_horizontal"
                             android:text="0" />
                     </TableRow>
+
                     <TableRow
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
@@ -2767,14 +2770,6 @@
                         android:background="@drawable/border"
                         android:orientation="horizontal">
 
-                        <TextView
-                            android:id="@+id/sve31"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="SE1"
-                            tools:layout_editor_absoluteX="16dp"
-                            tools:layout_editor_absoluteY="35dp" />
-
                         <EditText
                             android:id="@+id/ve1"
                             android:layout_width="30dp"
@@ -2785,6 +2780,14 @@
                             android:paddingTop="1dp"
                             android:text="10"
                             android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/sve31"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="SE1"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
 
                         <TextView
                             android:id="@+id/we1"
@@ -2799,14 +2802,6 @@
                         android:background="@drawable/border"
                         android:orientation="horizontal">
 
-                        <TextView
-                            android:id="@+id/sve32"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="SE2"
-                            tools:layout_editor_absoluteX="16dp"
-                            tools:layout_editor_absoluteY="35dp" />
-
                         <EditText
                             android:id="@+id/ve2"
                             android:layout_width="30dp"
@@ -2815,8 +2810,16 @@
                             android:ems="10"
                             android:inputType="numberSigned"
                             android:paddingTop="1dp"
-                            android:text="10"
+                            android:text="8"
                             android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/sve32"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="SE2"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
 
                         <TextView
                             android:id="@+id/we2"
@@ -2832,14 +2835,6 @@
                         android:background="@drawable/border"
                         android:orientation="horizontal">
 
-                        <TextView
-                            android:id="@+id/sve33"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="SE3"
-                            tools:layout_editor_absoluteX="16dp"
-                            tools:layout_editor_absoluteY="35dp" />
-
                         <EditText
                             android:id="@+id/ve3"
                             android:layout_width="30dp"
@@ -2848,8 +2843,16 @@
                             android:ems="10"
                             android:inputType="numberSigned"
                             android:paddingTop="1dp"
-                            android:text="10"
+                            android:text="7"
                             android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/sve33"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="SE3"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
 
                         <TextView
                             android:id="@+id/we3"
@@ -2863,14 +2866,6 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/border">
 
-                        <TextView
-                            android:id="@+id/sve34"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="SE4"
-                            tools:layout_editor_absoluteX="16dp"
-                            tools:layout_editor_absoluteY="35dp" />
-
                         <EditText
                             android:id="@+id/ve4"
                             android:layout_width="30dp"
@@ -2879,8 +2874,16 @@
                             android:ems="10"
                             android:inputType="numberSigned"
                             android:paddingTop="1dp"
-                            android:text="10"
+                            android:text="7"
                             android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/sve34"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="SE4"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
 
                         <TextView
                             android:id="@+id/we4"
@@ -2894,14 +2897,6 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/border">
 
-                        <TextView
-                            android:id="@+id/sve35"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="SE5"
-                            tools:layout_editor_absoluteX="16dp"
-                            tools:layout_editor_absoluteY="35dp" />
-
                         <EditText
                             android:id="@+id/ve5"
                             android:layout_width="30dp"
@@ -2910,8 +2905,16 @@
                             android:ems="10"
                             android:inputType="numberSigned"
                             android:paddingTop="1dp"
-                            android:text="10"
+                            android:text="6"
                             android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/sve35"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="SE5"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
 
                         <TextView
                             android:id="@+id/we5"
@@ -2925,14 +2928,6 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/border">
 
-                        <TextView
-                            android:id="@+id/sve36"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="SE6"
-                            tools:layout_editor_absoluteX="16dp"
-                            tools:layout_editor_absoluteY="35dp" />
-
                         <EditText
                             android:id="@+id/ve6"
                             android:layout_width="30dp"
@@ -2941,8 +2936,16 @@
                             android:ems="10"
                             android:inputType="numberSigned"
                             android:paddingTop="1dp"
-                            android:text="10"
+                            android:text="9"
                             android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/sve36"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="SE6"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
 
                         <TextView
                             android:id="@+id/we6"
@@ -2956,14 +2959,6 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/border">
 
-                        <TextView
-                            android:id="@+id/sve37"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="SE7"
-                            tools:layout_editor_absoluteX="16dp"
-                            tools:layout_editor_absoluteY="35dp" />
-
                         <EditText
                             android:id="@+id/ve7"
                             android:layout_width="30dp"
@@ -2972,8 +2967,16 @@
                             android:ems="10"
                             android:inputType="numberSigned"
                             android:paddingTop="1dp"
-                            android:text="10"
+                            android:text="7"
                             android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/sve37"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="SE7"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
 
                         <TextView
                             android:id="@+id/we7"
@@ -3007,6 +3010,7 @@
                             android:layout_gravity="right|center_horizontal"
                             android:text="0" />
                     </TableRow>
+
                     <TableRow
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
@@ -3043,7 +3047,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Step 4-5"
+                    android:text="Крок 4-5"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="18sp" />
 
@@ -3324,7 +3328,825 @@
 
             </LinearLayout>
 
-        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Крок 6"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Продовжити обчислення" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txa1"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="a1" />
+
+                <TextView
+                    android:id="@+id/txa2"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="a2" />
+
+                <TextView
+                    android:id="@+id/txa3"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="a3" />
+
+                <TextView
+                    android:id="@+id/txa4"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="a4" />
+
+                <TextView
+                    android:id="@+id/txa5"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="a5" />
+
+                <TextView
+                    android:id="@+id/txa6"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="a6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/a1"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="bottom"
+                    android:inputType="number"
+                    android:paddingTop="1dp"
+                    android:text="0"
+                    android:textAlignment="gravity"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/a2"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="bottom"
+                    android:inputType="number"
+                    android:paddingTop="1dp"
+                    android:text="0.2"
+                    android:textAlignment="gravity"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/a3"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="bottom"
+                    android:inputType="number"
+                    android:paddingTop="1dp"
+                    android:text="0.4"
+                    android:textAlignment="gravity"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/a4"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="bottom"
+                    android:inputType="number"
+                    android:paddingTop="1dp"
+                    android:text="0.6"
+                    android:textAlignment="gravity"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/a5"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="bottom"
+                    android:inputType="number"
+                    android:paddingTop="1dp"
+                    android:text="0.8"
+                    android:textAlignment="gravity"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/a6"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="bottom"
+                    android:inputType="number"
+                    android:paddingTop="1dp"
+                    android:text="1"
+                    android:textAlignment="gravity"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/txtSecurity1"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="Security" />
+
+                <TextView
+                    android:id="@+id/txtHealthcare1"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="Healthcare" />
+
+                <TextView
+                    android:id="@+id/txtEnvironment1"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="Environment" />
+
+                <TextView
+                    android:id="@+id/txtEnvironment21"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="Загальна оцінка" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border">
+
+                        <TextView
+                            android:id="@+id/su1"
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:text="S"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
+
+
+                        <TextView
+                            android:id="@+id/lvss"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right|center_horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:inputType="text"
+                            android:text="VHR" />
+
+                        <TextView
+                            android:id="@+id/lvsh"
+                            android:layout_width="75dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right|center_horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:inputType="text"
+                            android:text="VHR" />
+
+                        <TextView
+                            android:id="@+id/lvse"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right|center_horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:inputType="text"
+                            android:text="VHR" />
+
+                        <TextView
+                            android:id="@+id/lvsm"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right|center_horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:inputType="text"
+                            android:text="VHR" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border">
+
+                        <TextView
+                            android:id="@+id/eu1"
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:text="E"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
+
+
+                        <TextView
+                            android:id="@+id/lves"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right|center_horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:inputType="text"
+                            android:text="VHR" />
+
+                        <TextView
+                            android:id="@+id/lveh"
+                            android:layout_width="75dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right|center_horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:inputType="text"
+                            android:text="VHR" />
+
+                        <TextView
+                            android:id="@+id/lvee"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right|center_horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:inputType="text"
+                            android:text="VHR" />
+
+                        <TextView
+                            android:id="@+id/lvem"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right|center_horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:inputType="text"
+                            android:text="VHR" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border">
+
+                        <TextView
+                            android:id="@+id/du1"
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:text="D"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
+
+
+                        <TextView
+                            android:id="@+id/lvds"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right|center_horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:inputType="text"
+                            android:text="VHR" />
+
+                        <TextView
+                            android:id="@+id/lvdh"
+                            android:layout_width="75dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right|center_horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:inputType="text"
+                            android:text="VHR" />
+
+                        <TextView
+                            android:id="@+id/lvde"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right|center_horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:inputType="text"
+                            android:text="VHR" />
+
+                        <TextView
+                            android:id="@+id/lvdm"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right|center_horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:inputType="text"
+                            android:text="VHR" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Крок 7-8"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Продовжити обчислення" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt12"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/txtFinal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="Ресурс допустимого ризику" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border">
+
+                        <TextView
+                            android:id="@+id/su12"
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:text="S"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
+
+
+                        <TextView
+                            android:id="@+id/sfinal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right|center_horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:inputType="text"
+                            android:text="неприйнятний" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border">
+
+                        <TextView
+                            android:id="@+id/eu12"
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:text="E"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
+
+
+                        <TextView
+                            android:id="@+id/efinal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right|center_horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:inputType="text"
+                            android:text="неприйнятний" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border">
+
+                        <TextView
+                            android:id="@+id/du12"
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:text="D"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
+
+
+                        <TextView
+                            android:id="@+id/dfinal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right|center_horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:inputType="text"
+                            android:text="неприйнятний" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/pieChart_view"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt123"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/txts2"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="Ресурс" />
+
+                <TextView
+                    android:id="@+id/txts"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="S" />
+
+                <TextView
+                    android:id="@+id/txte"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="E" />
+
+                <TextView
+                    android:id="@+id/txtd"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="D" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border">
+
+                        <EditText
+                            android:id="@+id/sum1"
+                            android:layout_width="75dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:gravity="center_horizontal"
+                            android:inputType="number"
+                            android:paddingTop="1dp"
+                            android:text="100"
+                            android:textAlignment="gravity"
+                            android:textSize="12sp" />
+
+
+                        <TextView
+                            android:id="@+id/ssum"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:text="Security"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
+
+                        <TextView
+                            android:id="@+id/ssum1"
+                            android:layout_width="75dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_horizontal"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/esum1"
+                            android:layout_width="75dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_horizontal"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/dsum1"
+                            android:layout_width="75dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_horizontal"
+                            android:text="0" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border">
+
+                        <EditText
+                            android:id="@+id/sum2"
+                            android:layout_width="75dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:gravity="center_horizontal"
+                            android:inputType="number"
+                            android:paddingTop="1dp"
+                            android:text="100"
+                            android:textAlignment="gravity"
+                            android:textSize="12sp" />
+
+
+                        <TextView
+                            android:id="@+id/hsum"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:text="Healthcare"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
+
+                        <TextView
+                            android:id="@+id/ssum2"
+                            android:layout_width="75dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_horizontal"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/esum2"
+                            android:layout_width="75dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_horizontal"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/dsum2"
+                            android:layout_width="75dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_horizontal"
+                            android:text="0" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border">
+
+                        <EditText
+                            android:id="@+id/sum3"
+                            android:layout_width="75dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:gravity="center_horizontal"
+                            android:inputType="number"
+                            android:paddingTop="1dp"
+                            android:text="100"
+                            android:textAlignment="gravity"
+                            android:textSize="12sp" />
+
+
+                        <TextView
+                            android:id="@+id/esum"
+                            android:layout_width="82dp"
+                            android:layout_height="match_parent"
+                            android:text="Environment"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
+
+                        <TextView
+                            android:id="@+id/ssum3"
+                            android:layout_width="75dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_horizontal"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/esum3"
+                            android:layout_width="75dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_horizontal"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/dsum3"
+                            android:layout_width="75dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_horizontal"
+                            android:text="0" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border">
+
+                        <EditText
+                            android:id="@+id/sumsed"
+                            android:layout_width="75dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:gravity="center_horizontal"
+                            android:inputType="number"
+                            android:paddingTop="1dp"
+                            android:text="100"
+                            android:textAlignment="gravity"
+                            android:textSize="12sp" />
+
+
+                        <TextView
+                            android:id="@+id/msum"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:text="К-лексне фі-сування"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="35dp" />
+
+                        <TextView
+                            android:id="@+id/sedm1"
+                            android:layout_width="75dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_horizontal"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/sedm2"
+                            android:layout_width="75dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_horizontal"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/sedm3"
+                            android:layout_width="75dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_horizontal"
+                            android:text="0" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>

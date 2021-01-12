@@ -3,6 +3,7 @@ package com.e.indwork;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.InputFilter;
 import android.widget.ArrayAdapter;
@@ -10,12 +11,19 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ScrollView;
 import android.widget.Spinner;
-import android.widget.TableLayout;
-import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.github.mikephil.charting.animation.Easing;
+import com.github.mikephil.charting.charts.PieChart;
+import com.github.mikephil.charting.data.PieData;
+import com.github.mikephil.charting.data.PieDataSet;
+import com.github.mikephil.charting.data.PieEntry;
+
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Locale;
+import java.util.Map;
 
 
 public class MainActivity extends AppCompatActivity  {
@@ -36,9 +44,18 @@ double rs;
 double rh;
 double re;
 double [] usr;
-double[] uhr;
 double[] uer;
+double[] udr;
 double[]sed=new double[3];
+    private String[] lvls;
+    private double[] a=new double[6];
+    private String smain;
+    private String emain;
+    private String dmain;
+    TextView finals;
+    TextView finale;
+    TextView finald;
+    PieChart pieChart;
 
 
     @SuppressLint({"CutPasteId", "DefaultLocale"})
@@ -49,16 +66,22 @@ double[]sed=new double[3];
         Button beginCalculation= findViewById(R.id.button);
         Button step23=findViewById(R.id.button3);
         Button step45=findViewById(R.id.button4);
+        Button step6=findViewById(R.id.button5);
+        Button step78=findViewById(R.id.button6);
+        finals=findViewById(R.id.sfinal);
+        finale=findViewById(R.id.efinal);
+        finald=findViewById(R.id.dfinal);
         ScrollView scrollView=findViewById(R.id.scroll);
         EditText ks=findViewById(R.id.uss);
         EditText kh=findViewById(R.id.ush);
         EditText ke=findViewById(R.id.use);
         usr=new double[3];
-        uhr=new double[3];
         uer=new double[3];
+        udr=new double[3];
         scrollView.setFocusable(false);
         levels = new String[]{ "низький рівень", "рівень нижче середнього", "середній рівень", "рівень вище середнього", "високий рівень" };
         checks = new String[]{ "песимістичний сценарій розгортання подій", "обережний сценарій розгортання подій", "середній сценарій розгортання подій", "оптимістичний сценарій розгортання подій" };
+        lvls = new String[]{ "VLR", "LR", "AR", "HR", "VHR" };
         check =  findViewById(R.id.check);
         Spinner spin1 =  findViewById(R.id.ss);
         Spinner spin2 =  findViewById(R.id.ss1);
@@ -159,7 +182,12 @@ double[]sed=new double[3];
             editText = findViewById(i);
             editText.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "1")});
         }
-
+        editText= findViewById(R.id.a1);
+        vmain=editText.getId();
+        for (int i=vmain;i<vmain+6;i++) {
+            editText = findViewById(i);
+            editText.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "1")});
+        }
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, levels);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         ArrayAdapter<String> chadapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, checks);
@@ -312,13 +340,13 @@ double[]sed=new double[3];
                 textView=findViewById(R.id.deu);
                 textView.setText(String.format("%.3f",stepFour(re,(double) 2/3)));
                 for (int i=0;i<3;i++){
-                    usr[i]=stepFour(rs,(double)5/3);
-                }
-                for (int i=0;i<3;i++){
-                    uhr[i]=stepFour(rh,(double)4/3);
-                }
-                for (int i=0;i<3;i++){
-                    uer[i]=stepFour(re,(double)2/3);
+                    double temp = 0;
+                    if (i==0){temp=rs;}
+                    if (i==1){temp=rh;}
+                    if (i==2){temp=re;}
+                    usr[i]=stepFour(temp,(double)5/3);
+                    uer[i]=stepFour(temp,(double)4/3);
+                    udr[i]=stepFour(temp,(double)2/3);
                 }
                 double koefs = Double.valueOf(ks.getText().toString()) / (Double.valueOf(ks.getText().toString()) + Double.valueOf(kh.getText().toString()) + Double.valueOf(ke.getText().toString()));
                 double koefh = Double.valueOf(ks.getText().toString()) / (Double.valueOf(ks.getText().toString()) + Double.valueOf(kh.getText().toString()) + Double.valueOf(ke.getText().toString()));
@@ -328,8 +356,8 @@ double[]sed=new double[3];
                 for (int i=0;i<3;i++){
                     double [] temp = new double[3];
                     if(i==0){ temp=usr;}
-                    if(i==1){ temp=uhr;}
-                    if(i==2){ temp=uer;}
+                    if(i==1){ temp=uer;}
+                    if(i==2){ temp=udr;}
                     for (int j=0;j<3;j++)
                      {
                         sed[i]=sed[i]+(koefss[j]*temp[j]);
@@ -345,7 +373,125 @@ double[]sed=new double[3];
                 e.printStackTrace();
             }
         });
+        step6.setOnClickListener(view ->{
+            try {
+                EditText editText1= findViewById(R.id.a1);
+                int vmain1=editText1.getId();
+                for (int i=vmain1;i<vmain1+6;i++) {
+                    editText1 = findViewById(i);
+                    a[i-vmain1]= Double.valueOf(editText1.getText().toString());
+                }
+                textView=findViewById(R.id.lvss);
+                textView.setText(lvls[stepSix(a,usr[0])]);
+                textView=findViewById(R.id.lvsh);
+                textView.setText(lvls[stepSix(a,usr[1])]);
+                textView=findViewById(R.id.lvse);
+                textView.setText(lvls[stepSix(a,usr[2])]);
+                textView=findViewById(R.id.lvsm);
+                textView.setText(lvls[stepSix(a,sed[0])]);
+                textView=findViewById(R.id.lves);
+                textView.setText(lvls[stepSix(a,uer[0])]);
+                textView=findViewById(R.id.lveh);
+                textView.setText(lvls[stepSix(a,uer[1])]);
+                textView=findViewById(R.id.lvee);
+                textView.setText(lvls[stepSix(a,uer[2])]);
+                textView=findViewById(R.id.lvem);
+                textView.setText(lvls[stepSix(a,sed[1])]);
+                textView=findViewById(R.id.lvds);
+                textView.setText(lvls[stepSix(a,udr[0])]);
+                textView=findViewById(R.id.lvdh);
+                textView.setText(lvls[stepSix(a,udr[1])]);
+                textView=findViewById(R.id.lvde);
+                textView.setText(lvls[stepSix(a,udr[2])]);
+                textView=findViewById(R.id.lvdm);
+                textView.setText(lvls[stepSix(a,sed[2])]);
+                smain=lvls[stepSix(a,sed[0])];
+                emain=lvls[stepSix(a,sed[1])];
+                dmain=lvls[stepSix(a,sed[2])];
 
+            }
+            catch (NullPointerException e){
+                Toast.makeText(this,"Введіть всі значення таблиці, або завершіть попередній крок",Toast.LENGTH_LONG).show();
+                e.printStackTrace();
+            }
+            catch (Exception e){
+                Toast.makeText(this,"Сталася помилка",Toast.LENGTH_LONG).show();
+                e.printStackTrace();
+            }
+        });
+        step78.setOnClickListener(view ->{
+            try {
+                String checkers=check.getSelectedItem().toString();
+                if (checkers.equals(checks[0])){
+                    finals.setText(stepSevenVar1(smain));
+                    finale.setText(stepSevenVar1(emain));
+                    finald.setText(stepSevenVar1(dmain));
+                }
+                if (checkers.equals(checks[1])){
+                    finals.setText(stepSevenVar1(smain));
+                    finale.setText(stepSevenVar1(emain));
+                    finald.setText(stepSevenVar2(dmain));
+                }
+                if (checkers.equals(checks[2])){
+                    finals.setText(stepSevenVar1(smain));
+                    finale.setText(stepSevenVar2(emain));
+                    finald.setText(stepSevenVar2(dmain));
+                }
+                if (checkers.equals(checks[3])){
+                    finals.setText(stepSevenVar2(smain));
+                    finale.setText(stepSevenVar2(emain));
+                    finald.setText(stepSevenVar2(dmain));
+                }
+                EditText editText1= findViewById(R.id.sumsed);
+                int vmain1=editText1.getId();
+                TextView txts= findViewById(R.id.sedm1);
+                int main=txts.getId();
+                for (int i=vmain1;i<vmain1+3;i++) {
+                    editText1 = findViewById(vmain1);
+                    txts=findViewById(main+(i-vmain1));
+                    txts.setText(String.format(Locale.ROOT,"%.2f", stepEight(Integer.valueOf(editText1.getText().toString()),sed[i-vmain1])));
+                }
+                sed[0]=Double.parseDouble( String.format(Locale.ROOT,"%.3f",sed[0]));
+                sed[1]=Double.parseDouble( String.format(Locale.ROOT,"%.3f",sed[1]));
+                sed[2]=Double.parseDouble( String.format(Locale.ROOT,"%.3f",sed[2]));
+                pieChart = findViewById(R.id.pieChart_view);
+                initPieChart();
+                showPieChart();
+
+                editText1= findViewById(R.id.sum1);
+                vmain1=editText1.getId();
+                txts= findViewById(R.id.ssum1);
+                main=txts.getId();
+                for (int i=vmain1;i<vmain1+3;i++) {
+                        editText1 = findViewById(i);
+                        txts=findViewById(main+(i-vmain1));
+                    txts.setText(String.format(Locale.ROOT,"%.2f", stepEight(Integer.valueOf(editText1.getText().toString()),usr[i-vmain1])));
+                }
+                txts= findViewById(R.id.esum1);
+                main=txts.getId();
+                for (int i=vmain1;i<vmain1+3;i++) {
+                    editText1 = findViewById(i);
+                    txts=findViewById(main+(i-vmain1));
+                    txts.setText(String.format(Locale.ROOT,"%.2f", stepEight(Integer.valueOf(editText1.getText().toString()),uer[i-vmain1])));
+                }
+                txts= findViewById(R.id.dsum1);
+                main=txts.getId();
+                for (int i=vmain1;i<vmain1+3;i++) {
+                    editText1 = findViewById(i);
+                    txts=findViewById(main+(i-vmain1));
+                    txts.setText(String.format(Locale.ROOT,"%.2f", stepEight(Integer.valueOf(editText1.getText().toString()),udr[i-vmain1])));
+                }
+
+            }
+            catch (NullPointerException e){
+                Toast.makeText(this,"Введіть всі значення таблиці, або завершіть попередній крок",Toast.LENGTH_LONG).show();
+                e.printStackTrace();
+            }
+            catch (Exception e){
+                Toast.makeText(this,"Сталася помилка",Toast.LENGTH_LONG).show();
+                e.printStackTrace();
+            }
+        });
     }
     @SuppressLint("DefaultLocale")
     private void stepOne(double[]ss, double [] sh, double se[], double[]a, String[] lvlss, String[]lvlsh, String[]lvlse){
@@ -907,11 +1053,120 @@ double[]sed=new double[3];
         }
         else return 0;
     }
-}
-/*for (int i=0;i<7    ;i++){
-        rowss=(TableRow) tabless.getChildAt(i);
-        for (int j=1;j<3;j++) {
-        textView.setText(String.valueOf(o[i]));
-        rowss.addView(textView);
+    private int stepSix(double []a, double u){
+        if (u>=a[0]&&u<a[1]){
+            return 0;
         }
-        }*/
+        if (u>=a[1]&&u<a[2]){
+            return 1;
+        }
+        if (u>=a[2]&&u<a[3]){
+            return 2;
+        }
+        if (u>=a[3]&&u<a[4]){
+            return 3;
+        }
+        if (u>=a[4]&&u<a[5]){
+            return 4;
+        }
+        else return 4;
+    }
+    private String stepSevenVar1(String value){
+        if (value.equals(lvls[4])){
+            return "неприйнятний";
+        }
+        if (value.equals(lvls[3])){
+            return "неприйнятний";
+        }
+        if (value.equals(lvls[2])){
+            return "прийнятний";
+        }
+        if (value.equals(lvls[1])){
+            return "прийнятний";
+        }
+        if (value.equals(lvls[0])){
+            return "прийнятний";
+        }
+        else return "неприйнятний";
+    }
+    private String stepSevenVar2(String value){
+        if (value.equals(lvls[4])){
+            return "неприйнятний";
+        }
+        if (value.equals(lvls[3])){
+            return "неприйнятний";
+        }
+        if (value.equals(lvls[2])){
+            return "неприйнятний";
+        }
+        if (value.equals(lvls[1])){
+            return "прийнятний";
+        }
+        if (value.equals(lvls[0])){
+            return "прийнятний";
+        }
+        else return "неприйнятний";
+    }
+    private double stepEight(int res, double val){
+        return res*(1+val);
+    }
+    private void showPieChart(){
+
+        ArrayList<PieEntry> pieEntries = new ArrayList<>();
+        String label = "type";
+        //initializing data
+        Map<String, Integer> typeAmountMap = new HashMap<>();
+        typeAmountMap.put("S",Integer.parseInt(Double.toString(sed[0]).split("\\.")[1]));
+        typeAmountMap.put("E",Integer.parseInt(Double.toString(sed[1]).split("\\.")[1]));
+        typeAmountMap.put("D",Integer.parseInt(Double.toString(sed[2]).split("\\.")[1]));
+
+        //initializing colors for the entries
+        ArrayList<Integer> colors = new ArrayList<>();
+        colors.add(Color.parseColor("#304567"));
+        colors.add(Color.parseColor("#309967"));
+        colors.add(Color.parseColor("#476567"));
+
+
+        //input data and fit data into pie chart entry
+        for(String type: typeAmountMap.keySet()){
+            pieEntries.add(new PieEntry(typeAmountMap.get(type).floatValue(), type));
+        }
+
+        //collecting the entries with label name
+        PieDataSet pieDataSet = new PieDataSet(pieEntries,label);
+        //setting text size of the value
+        pieDataSet.setValueTextSize(12f);
+        //providing color list for coloring different entries
+        pieDataSet.setColors(colors);
+        //grouping the data set from entry to chart
+        PieData pieData = new PieData(pieDataSet);
+        //showing the value of the entries, default true if not set
+        pieData.setDrawValues(true);
+
+        pieChart.setData(pieData);
+        pieChart.invalidate();
+    }
+    private void initPieChart(){
+        //using percentage as values instead of amount
+        pieChart.setUsePercentValues(true);
+
+        //remove the description label on the lower left corner, default true if not set
+        pieChart.getDescription().setEnabled(false);
+        pieChart.setDrawHoleEnabled(false);
+
+        //enabling the user to rotate the chart, default true
+        pieChart.setRotationEnabled(true);
+        //adding friction when rotating the pie chart
+        pieChart.setDragDecelerationFrictionCoef(0.9f);
+        //setting the first entry start from right hand side, default starting from top
+        pieChart.setRotationAngle(0);
+
+        //highlight the entry when it is tapped, default true if not set
+        pieChart.setHighlightPerTapEnabled(true);
+        //adding animation so the entries pop up from 0 degree
+        pieChart.animateY(1400, Easing.EasingOption.EaseInOutQuad);
+        //setting the color of the hole in the middle, default white
+        pieChart.setHoleColor(Color.parseColor("#000000"));
+
+    }
+}
